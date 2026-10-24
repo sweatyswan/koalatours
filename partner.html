@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Obchodné prípady — Koala tours</title>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages/partner.css">
+  <link rel="stylesheet" href="css/pages/partner-mobile.css">
+  <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body data-header="dark">
+  <div data-partial="sprite"></div>
+  <div class="page">
+    <div class="band page-top">
+      <div data-partial="header"></div>
+    </div>
+
+    <div class="partner-tabs band">
+      <span class="partner-tabs__line"></span>
+      <nav class="partner-tabs__row" aria-label="Partner">
+        <a class="is-active" href="partner.html" aria-current="page">Obchodné prípady</a>
+        <a href="#">Súbory na stiahnutIe</a>
+        <a href="#">Zmena hesla</a>
+        <a href="partner-login.html">Odhlásiť</a>
+      </nav>
+      <span class="partner-tabs__line"></span>
+    </div>
+
+    <main class="col">
+      <h1 class="op-title">Obchodné prípady</h1>
+      <form class="filters" action="#">
+        <div class="filters__row">
+          <label class="float-field"><span>Kód termínu</span><input type="text" name="termin"></label>
+          <label class="float-field"><span>Rezervačné číslo</span><input type="text" name="cislo"></label>
+          <label class="float-field"><span>Priezvisko klienta</span><input type="text" name="priezvisko"></label>
+          <label class="float-field"><span>Názov produktu</span><input type="text" name="produkt"></label>
+        </div>
+        <div class="filters__row">
+          <label class="float-field"><span>Organizácie partnera</span><input type="text" name="organizacia"></label>
+          <label class="float-field"><span>Kód predajcu</span><input type="text" name="predajca"></label>
+          <div class="filters__checks">
+            <label class="check"><input type="checkbox" name="stav" value="rezervacia">Rezervácia</label>
+            <label class="check"><input type="checkbox" name="stav" value="potvrdena">Potvrdená rezervácia</label>
+            <label class="check"><input type="checkbox" name="stav" value="predaj">Predaj</label>
+            <label class="check"><input type="checkbox" name="stav" value="dopyt">Dopyt</label>
+          </div>
+        </div>
+        <div class="filters__row">
+          <label class="float-field"><span>Dátum od</span><input type="text" name="od"></label>
+          <label class="float-field"><span>Dátum do</span><input type="text" name="do"></label>
+          <div class="filters__end">
+            <div class="float-field">
+              <span>Filtrovať podľa</span>
+              <button class="float-field__value" type="button">Založenie obchodného prípadu <svg class="icon" width="16" height="16" aria-hidden="true"><use href="#i-chevron-down"></use></svg></button>
+            </div>
+            <button class="btn btn--fill" type="button">Filtruj <img src="vizualy/content-icon-search.svg" alt="" width="22" height="22"></button>
+          </div>
+        </div>
+      </form>
+
+      <div class="op-table">
+        <div class="op-row op-row--head">
+          <span>Číslo rez.</span>
+          <span>Kontaktér</span>
+          <span>Destinácia</span>
+          <span>Hotel</span>
+          <span>Termín</span>
+          <span>Nocí</span>
+          <span>Stav</span>
+          <span>Expirácia</span>
+          <span>Cena klient</span>
+          <span>Provízia</span>
+          <span>Cena CA</span>
+          <span>Zostáva uhradiť</span>
+        </div>
+        <div class="op-row">
+          <span class="is-link">414 508 668</span><span>Tichý</span><span>Turecko | Side | Colakli</span><span>Alba Queen</span><span>03.10.2025</span><span>7</span><span>Rezervácia</span><span>19.08.25 13:54</span><span>2&nbsp;227,60</span><span>222,76</span><span>2&nbsp;004,84</span><span>2&nbsp;004,84</span>
+        </div>
+        <div class="op-row">
+          <span class="is-link">414 508 668</span><span>Tichý</span><span>Turecko | Side | Colakli</span><span>Alba Queen</span><span>03.10.2025</span><span>7</span><span>Rezervácia</span><span>19.08.25 13:54</span><span>2&nbsp;227,60</span><span>222,76</span><span>2&nbsp;004,84</span><span>2&nbsp;004,84</span>
+        </div>
+        <div class="op-row">
+          <span class="is-link">414 508 668</span><span>Tichý</span><span>Turecko | Side | Colakli</span><span>Alba Queen</span><span>03.10.2025</span><span>7</span><span>Rezervácia</span><span>19.08.25 13:54</span><span>2&nbsp;227,60</span><span>222,76</span><span>2&nbsp;004,84</span><span>2&nbsp;004,84</span>
+        </div>
+        <div class="op-row">
+          <span class="is-link">414 508 668</span><span>Tichý</span><span>Turecko | Side | Colakli</span><span>Alba Queen</span><span>03.10.2025</span><span>7</span><span>Rezervácia</span><span>19.08.25 13:54</span><span>2&nbsp;227,60</span><span>222,76</span><span>2&nbsp;004,84</span><span>2&nbsp;004,84</span>
+        </div>
+        <div class="op-sum">
+          <p class="op-sum__title">Prehľad »</p>
+          <p class="op-sum__item"><img src="vizualy/content-icon-wallet.svg" alt="" width="30" height="30"><strong>Cena celkom:</strong><span>2&nbsp;227,60&nbsp;€</span></p>
+          <p class="op-sum__item op-sum__wide"><img src="vizualy/content-icon-thumb.svg" alt="" width="30" height="30"><strong>Provízie celkom:</strong><span>222,76&nbsp;€</span></p>
+          <p class="op-sum__item op-sum__pay"><img src="vizualy/content-icon-card.svg" alt="" width="30" height="30"><strong>Zaplatené:</strong><span>0,00&nbsp;€</span></p>
+          <p class="op-sum__item op-sum__people"><img src="vizualy/content-icon-persons.svg" alt="" width="30" height="30"><strong>Osôb:</strong><span>10</span></p>
+        </div>
+      </div>
+    </main>
+
+    <div data-partial="footer-partner"></div>
+  </div>
+  <div class="mop">
+    <header class="mop__top">
+      <div class="mbar">
+        <div class="mbar__side">
+          <a class="mbar__hit" href="kontakty.html" aria-label="Kontakty"><svg class="icon" width="34" height="34" aria-hidden="true"><use href="#i-phone"></use></svg></a>
+          <a class="mbar__hit" href="#" aria-label="Obľúbené"><svg class="icon" width="34" height="34" aria-hidden="true"><use href="#i-heart"></use></svg></a>
+        </div>
+        <a class="mbar__logo" href="index.html" aria-label="Koala tours"><img src="vizualy/mobile/logo.svg" alt="" width="130" height="44"></a>
+        <div class="mbar__side mbar__side--end">
+          <button class="mbar__hit" type="button" aria-label="Hľadať"><svg class="icon" width="34" height="34" aria-hidden="true"><use href="#i-search"></use></svg></button>
+          <button class="mbar__hit" type="button" data-mnav-open aria-expanded="false" aria-controls="mnav" aria-label="Menu"><img src="vizualy/mobile/icon-menu.svg" alt="" width="34" height="34"></button>
+        </div>
+      </div>
+    </header>
+    <nav class="mop-tabs" aria-label="Partner">
+      <a class="is-active" href="partner.html" aria-current="page">Obchodné prípady</a>
+      <span>Súbory na stiahnutIe</span>
+      <span>Zmena hesla</span>
+      <a href="partner-login.html">Odhlásiť</a>
+    </nav>
+    <div class="mop__body">
+      <h1>Obchodné prípady</h1>
+      <form class="mop-form" action="#">
+        <div class="mop-form__block mop-form__block--loose">
+          <div class="mop-form__pair">
+            <label class="float-field"><span>Kód termínu</span><input type="text" name="termin"></label>
+            <label class="float-field"><span>Rezervačné číslo</span><input type="text" name="cislo"></label>
+          </div>
+          <div class="mop-form__pair">
+            <label class="float-field"><span>Priezvisko klienta</span><input type="text" name="priezvisko"></label>
+            <label class="float-field"><span>Názov produktu</span><input type="text" name="produkt"></label>
+          </div>
+        </div>
+        <div class="mop-form__block">
+          <div class="mop-form__pair">
+            <label class="float-field"><span>Organizácie partnera</span><input type="text" name="organizacia"></label>
+            <label class="float-field"><span>Kód predajcu</span><input type="text" name="predajca"></label>
+          </div>
+          <div class="mop-checks">
+            <label class="check"><input type="checkbox" name="stav" value="rezervacia">Rezervácia</label>
+            <label class="check"><input type="checkbox" name="stav" value="potvrdena">Potvrdená rezervácia</label>
+            <label class="check"><input type="checkbox" name="stav" value="predaj">Predaj</label>
+            <label class="check"><input type="checkbox" name="stav" value="dopyt">Dopyt</label>
+          </div>
+        </div>
+        <div class="mop-form__block mop-form__block--loose">
+          <div class="mop-form__pair">
+            <label class="float-field"><span>Dátum od</span><input type="text" name="od"></label>
+            <label class="float-field"><span>Dátum do</span><input type="text" name="do"></label>
+          </div>
+          <div class="mop-form__block mop-form__block--loose">
+            <div class="float-field">
+              <span>Filtrovať podľa</span>
+              <button class="float-field__value" type="button">Založenie obchodného prípadu <svg class="icon" width="16" height="16" aria-hidden="true"><use href="#i-chevron-down"></use></svg></button>
+            </div>
+            <button class="btn btn--fill" type="button">Filtruj <img src="vizualy/content-icon-search.svg" alt="" width="22" height="22"></button>
+          </div>
+        </div>
+      </form>
+      <div class="mop-table">
+        <div class="mop-row mop-row--head">
+          <span>Číslo rez.</span>
+          <span>Kontaktér</span>
+          <span>Destinácia</span>
+          <span>Hotel</span>
+          <span>Termín</span>
+          <span>Nocí</span>
+          <span>Stav</span>
+          <span>Expirácia</span>
+          <span>Cena klient</span>
+          <span>Provízia</span>
+          <span>Cena CA</span>
+          <span>Zostáva uhradiť</span>
+        </div>
+        <div class="mop-row">
+          <span class="is-link">414 508 668</span><span>Tichý</span><span>Turecko | Side | Colakli</span><span>Alba Queen</span><span>03.10.2025</span><span>7</span><span>Rezervácia</span><span>19.08.25 13:54</span><span>2&nbsp;227,60</span><span>222,76</span><span>2&nbsp;004,84</span><span>2&nbsp;004,84</span>
+        </div>
+        <div class="mop-row">
+          <span class="is-link">414 508 668</span><span>Tichý</span><span>Turecko | Side | Colakli</span><span>Alba Queen</span><span>03.10.2025</span><span>7</span><span>Rezervácia</span><span>19.08.25 13:54</span><span>2&nbsp;227,60</span><span>222,76</span><span>2&nbsp;004,84</span><span>2&nbsp;004,84</span>
+        </div>
+        <div class="mop-row">
+          <span class="is-link">414 508 668</span><span>Tichý</span><span>Turecko | Side | Colakli</span><span>Alba Queen</span><span>03.10.2025</span><span>7</span><span>Rezervácia</span><span>19.08.25 13:54</span><span>2&nbsp;227,60</span><span>222,76</span><span>2&nbsp;004,84</span><span>2&nbsp;004,84</span>
+        </div>
+        <div class="mop-row">
+          <span class="is-link">414 508 668</span><span>Tichý</span><span>Turecko | Side | Colakli</span><span>Alba Queen</span><span>03.10.2025</span><span>7</span><span>Rezervácia</span><span>19.08.25 13:54</span><span>2&nbsp;227,60</span><span>222,76</span><span>2&nbsp;004,84</span><span>2&nbsp;004,84</span>
+        </div>
+        <div class="mop-sum">
+          <p class="mop-sum__title">Prehľad »</p>
+          <p class="mop-sum__item"><img src="vizualy/content-icon-wallet.svg" alt="" width="30" height="30"><strong>Cena celkom:</strong><span>2&nbsp;227,60&nbsp;€</span></p>
+          <p class="mop-sum__item"><img src="vizualy/content-icon-thumb.svg" alt="" width="30" height="30"><strong>Provízie celkom:</strong><span>222,76&nbsp;€</span></p>
+          <p class="mop-sum__item"><img src="vizualy/content-icon-card.svg" alt="" width="30" height="30"><strong>Zaplatené:</strong><span>0,00&nbsp;€</span></p>
+          <p class="mop-sum__item"><img src="vizualy/content-icon-persons.svg" alt="" width="30" height="30"><strong>Osôb:</strong><span>10</span></p>
+        </div>
+      </div>
+      <footer class="mfoot">
+        <div class="mfoot__cols">
+          <nav class="foot-links" aria-label="Stránky">
+            <a href="blog.html">Blog</a>
+            <a href="statika.html">Katalóg</a>
+            <a href="kontakty.html">Kontakty</a>
+            <a href="pobocky.html">Pobočky</a>
+          </nav>
+          <div class="mfoot__groups">
+            <div class="foot-group">
+              <h3>Služby pre vás</h3>
+              <a href="#">Darčekový poukaz</a>
+              <a href="#">Dovolenka na splátky</a>
+              <a href="#">Nástupné miesta autobusov</a>
+              <a href="#">Parkovanie na leisku</a>
+              <a href="#">Poistenie</a>
+            </div>
+            <div class="foot-group">
+              <h3>Koala Tours</h3>
+              <a href="#">Ochrana osobných údajov</a>
+              <a href="statika.html">Katalóg</a>
+              <a href="kontakty.html">Kontakty</a>
+            </div>
+            <div class="foot-group">
+              <h3>Partneri</h3>
+              <a href="partner-login.html">Príhlásenie</a>
+              <a href="#">Sphere</a>
+            </div>
+          </div>
+        </div>
+        <div class="mfoot__mid">
+          <div class="socials">
+            <a class="social" href="#"><span class="social__icon"><svg class="icon" width="30" height="30" aria-hidden="true"><use href="#i-instagram"></use></svg></span>instagram</a>
+            <a class="social" href="#"><span class="social__icon"><svg class="icon" width="30" height="30" aria-hidden="true"><use href="#i-facebook"></use></svg></span>facebook</a>
+            <a class="social" href="#"><span class="social__icon"><svg class="icon" width="30" height="30" aria-hidden="true"><use href="#i-youtube"></use></svg></span>youtube</a>
+          </div>
+          <p class="mfoot__copy">Copyright 2026 <a href="https://redred.sk" target="_blank" rel="noreferrer">redred.sk s.r.o.</a><br><a href="https://www.iscontent.cz" target="_blank" rel="noreferrer">redakčný systém is&gt;content</a> | <a href="https://www.istour.cz" target="_blank" rel="noreferrer">rezervačný systém is&gt;tour</a></p>
+        </div>
+        <hr class="mfoot__rule">
+        <div class="mfoot__legal">
+          <div>
+            <p>Cestovná kancelária Koala Tours, a.s. je zapísaná v obchodnom registri Mestského súdu Bratislava III, oddiel Sa, vložka č.2835/B | IČO: 35822244 |  Dunajská 8, 811 08 Bratislava</p>
+            <p>Orgán dozoru a  subjekt alternatívneho riešenia sporov: Slovenská obchodná inšpekcia,  Inšpektorát SOI pre Bratislavský kraj, Bajkalská 21/A, P.O. Box 5,<br>820  07 Bratislava 27</p>
+          </div>
+          <button class="btn btn--line" type="button">Spravovať cookies</button>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <div class="mnav" id="mnav" data-mnav hidden role="dialog" aria-modal="true" aria-label="Menu">
+    <div class="mbar">
+      <div class="mbar__side">
+        <a class="mbar__hit" href="kontakty.html" aria-label="Kontakty"><svg class="icon" width="34" height="34" aria-hidden="true"><use href="#i-phone"></use></svg></a>
+        <a class="mbar__hit" href="#" aria-label="Obľúbené"><svg class="icon" width="34" height="34" aria-hidden="true"><use href="#i-heart"></use></svg></a>
+      </div>
+      <a class="mbar__logo" href="index.html" aria-label="Koala tours"><img src="vizualy/mobile/logo.svg" alt="" width="130" height="44"></a>
+      <div class="mbar__side mbar__side--end">
+        <button class="mbar__hit" type="button" aria-label="Hľadať"><svg class="icon" width="34" height="34" aria-hidden="true"><use href="#i-search"></use></svg></button>
+        <button class="mbar__hit" type="button" data-mnav-close aria-label="Zavrieť"><img src="vizualy/mobile/icon-close.svg" alt="" width="34" height="34"></button>
+      </div>
+    </div>
+    <nav aria-label="Hlavné menu">
+      <ul class="mnav__links">
+        <li><a href="filter.html">Last minute</a></li>
+        <li><a href="filter.html">More</a></li>
+        <li><a href="filter.html">Exotika</a></li>
+        <li><a href="filter.html">Poznávanie</a></li>
+        <li><a href="filter.html">Púte</a></li>
+      </ul>
+    </nav>
+    <hr class="mnav__rule">
+    <nav aria-label="Ďalšie">
+      <ul class="mnav__links">
+        <li><a href="kontakty.html">Kontakty</a></li>
+        <li><a href="pobocky.html">Pobočky</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="statika.html">Katalóg</a></li>
+        <li><a href="#">Poistenie</a></li>
+        <li><a href="#">Darčekový poukaz</a></li>
+      </ul>
+    </nav>
+    <hr class="mnav__rule">
+    <div class="mnav__social">
+      <a href="#" aria-label="instagram"><svg class="icon" width="30" height="30" aria-hidden="true"><use href="#i-instagram"></use></svg></a>
+      <a href="#" aria-label="facebook"><svg class="icon" width="30" height="30" aria-hidden="true"><use href="#i-facebook"></use></svg></a>
+      <a href="#" aria-label="youtube"><svg class="icon" width="30" height="30" aria-hidden="true"><use href="#i-youtube"></use></svg></a>
+    </div>
+  </div>
+  <script src="js/proto.js"></script>
+</body>
+</html>

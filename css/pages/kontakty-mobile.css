@@ -1,0 +1,361 @@
+/* Mobile contacts. No mobile frame: desktop sections stacked in a 390px column.
+   Header, 15px side inset and footer are the site mobile shell, in px.
+   From 768px up this file does not show, so the 1920px contacts page stays. */
+
+.mkontakty {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .page {
+    display: none;
+  }
+
+  .mkontakty {
+    display: block;
+    width: 390px;
+    overflow-x: clip;
+    background: var(--white);
+    color: var(--black);
+    font-family: var(--font-sofia);
+  }
+
+  .mbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 360px;
+  }
+
+  .mbar__side {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+  }
+
+  .mbar__side--end {
+    justify-content: flex-end;
+  }
+
+  .mbar__logo {
+    flex: none;
+    width: 130px;
+    height: 44px;
+  }
+
+  .mbar__logo img,
+  .mbar__hit img {
+    display: block;
+  }
+
+  .mkontakty__top [data-mnav-open] img {
+    filter: brightness(0);
+  }
+
+  .mbar__hit {
+    display: flex;
+    width: 34px;
+    height: 34px;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+  }
+
+  .mkontakty__top {
+    padding: 15px 15px 0;
+  }
+
+  .mkontakty__top .mbar {
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--black-20);
+    color: var(--black);
+  }
+
+  .mkontakty__flow {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 25px 15px 15px;
+  }
+
+  .mkontakty__hero {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .mkontakty__shot {
+    position: relative;
+    width: 360px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    transform: scaleX(-1);
+  }
+
+  .mkontakty__shot img {
+    position: absolute;
+    top: -94.4%;
+    left: 0;
+    width: 110.36%;
+    height: 233.7%;
+  }
+
+  .mkontakty__dim,
+  .mkontakty__grad {
+    position: absolute;
+    inset: 0;
+  }
+
+  .mkontakty__dim {
+    background: rgba(0, 0, 0, 0.15);
+  }
+
+  .mkontakty__grad {
+    background: linear-gradient(to top, rgba(0, 46, 109, 0) 73.025%, rgba(135, 215, 239, 0.33));
+    mix-blend-mode: multiply;
+  }
+
+  .mkontakty__hero h1 {
+    color: var(--purple);
+    font-family: var(--font-sofia);
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: -0.8px;
+    line-height: normal;
+  }
+
+  .mkontakty .contacts,
+  .mkontakty .contact-block,
+  .mkontakty .contact-rule {
+    width: 360px;
+  }
+
+  .mnews {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 100px 24px;
+    border-radius: 10px;
+    color: var(--white);
+  }
+
+  .mnews__bg,
+  .mnews__bg img,
+  .mnews__shade {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .mnews__bg img {
+    object-fit: cover;
+    object-position: center bottom;
+  }
+
+  .mnews__shade {
+    background: rgba(62, 59, 69, 0.5);
+    mix-blend-mode: multiply;
+  }
+
+  .mnews__content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 30px;
+  }
+
+  .mnews h2 {
+    font-family: var(--font-sofia);
+    font-size: 29px;
+    font-weight: 600;
+    letter-spacing: -0.58px;
+    line-height: 1.15;
+    text-shadow: 0 20px 40px rgba(123, 123, 123, 0.2);
+  }
+
+  .mnews__lead {
+    margin: 0;
+    font-family: var(--font-futura);
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: -0.38px;
+    line-height: normal;
+    text-shadow: 0 20px 40px rgba(123, 123, 123, 0.2);
+  }
+
+  .mnews__card {
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    border-radius: 12px;
+    background: var(--white);
+  }
+
+  .mnews__card input,
+  .mnews__pref {
+    width: 100%;
+    height: 50px;
+    padding: 16px 27px;
+    border: 0;
+    background: transparent;
+    color: var(--black);
+    font-family: var(--font-sofia);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.28px;
+    text-align: left;
+  }
+
+  .mnews__card input::placeholder {
+    color: var(--black);
+    opacity: 1;
+  }
+
+  .mnews__rule {
+    height: 0;
+    margin: 0;
+    border: 0;
+    border-top: 1px solid var(--light-gray);
+  }
+
+  .mnews__pref {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--black);
+  }
+
+  .mnews__card .btn--fill {
+    width: 100%;
+  }
+
+  .mnews__consent {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-family: var(--font-sofia);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.28px;
+    line-height: 1.3;
+  }
+
+  .mnews__consent input {
+    flex: none;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    border: 1px solid var(--black-20);
+    border-radius: 5px;
+    background: var(--white);
+    appearance: none;
+  }
+
+  .mfoot {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 30px;
+  }
+
+  .mfoot__cols {
+    display: grid;
+    grid-template-columns: 170px 170px;
+    gap: 20px;
+  }
+
+  .mfoot__groups {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .mfoot .foot-links {
+    gap: 20px;
+    font-size: 14px;
+    letter-spacing: -0.28px;
+    line-height: 1;
+  }
+
+  .mfoot .foot-group h3,
+  .mfoot .foot-group a {
+    line-height: 1;
+  }
+
+  .mfoot .foot-group h3 {
+    font-size: 14px;
+    letter-spacing: -0.28px;
+  }
+
+  .mfoot .socials {
+    justify-content: center;
+    gap: 60px;
+  }
+
+  .mfoot .social {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+    letter-spacing: -0.32px;
+    text-align: center;
+  }
+
+  .mfoot__copy {
+    margin: 10px 0 0;
+    color: var(--black);
+    font-family: var(--font-sofia);
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .mfoot__copy a {
+    text-decoration: underline;
+  }
+
+  .mfoot__rule {
+    margin: 0;
+    border: 0;
+    border-top: 1px solid var(--light-gray);
+  }
+
+  .mfoot__legal {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .mfoot__legal .btn--line {
+    height: 50px;
+    border-color: var(--gray);
+    color: var(--gray);
+  }
+
+  .mfoot__legal p {
+    margin: 0;
+    color: var(--gray);
+    font-family: var(--font-sofia);
+    font-size: 13px;
+    letter-spacing: -0.26px;
+    line-height: 1.1;
+  }
+
+  .mfoot__legal p + p {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .mkontakty {
+    display: none !important;
+  }
+}

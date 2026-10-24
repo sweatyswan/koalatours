@@ -1,0 +1,132 @@
+.page-hero {
+  position: relative;
+  height: 470px;
+  overflow: hidden;
+}
+
+.page-hero__shot,
+.page-hero__dim,
+.page-hero__grad {
+  position: absolute;
+  inset: 0;
+}
+
+.page-hero__shot {
+  overflow: hidden;
+  transform: scaleX(-1);
+}
+
+.page-hero__shot img {
+  position: absolute;
+  top: -94.4%;
+  left: 0;
+  width: 110.36%;
+  height: 233.7%;
+}
+
+.page-hero__dim {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.page-hero__grad {
+  background: linear-gradient(to top, rgba(0, 46, 109, 0) 73.025%, rgba(135, 215, 239, 0.33));
+  mix-blend-mode: multiply;
+}
+
+.page-hero__bar {
+  position: relative;
+  z-index: 1;
+  padding-top: 30px;
+}
+
+.page-hero__title {
+  margin: 57px 0 0 482px;
+  color: var(--purple);
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: -0.8px;
+  line-height: normal;
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
+}
+
+.page-follow {
+  position: relative;
+  z-index: 1;
+  margin-top: -202px;
+}
+
+.narrow {
+  width: 836px;
+  margin-left: 542px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contact-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.contact-block h2 {
+  color: var(--purple);
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.56px;
+  line-height: normal;
+}
+
+.contact-block h2 span {
+  color: var(--red);
+}
+
+.contact-block__lead {
+  font-size: var(--text-16);
+  letter-spacing: -0.32px;
+  line-height: 1.3;
+}
+
+.contact-block__ask {
+  display: block;
+  margin-bottom: 10px;
+  font-size: var(--text-23);
+  font-weight: 600;
+  letter-spacing: -0.92px;
+  line-height: 1.3;
+}
+
+.contact-block__lead strong {
+  font-weight: 600;
+}
+
+.contact-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--red);
+  font-size: var(--text-16);
+  font-weight: 600;
+  letter-spacing: -0.32px;
+  line-height: normal;
+}
+
+.contact-rule {
+  margin: 0;
+  border: 0;
+  border-top: 1px solid var(--light-gray);
+}
+
+.btn--compact {
+  height: auto;
+  padding: 10px 20px;
+}
+
+.page > .site-footer {
+  margin-top: 30px;
+}

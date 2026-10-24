@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Filter — Koala tours</title>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/hotel-card.css">
+  <link rel="stylesheet" href="css/pages/filter.css">
+  <link rel="stylesheet" href="css/overlays.css">
+  <link rel="stylesheet" href="css/pages/filter-mobile.css">
+  <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body data-header="light">
+  <div data-partial="sprite"></div>
+  <div class="page">
+    <section class="filter-hero">
+      <div class="filter-hero__media">
+        <img src="vizualy/filter-hero.jpg" alt="">
+        <div class="filter-hero__dim"></div>
+        <div class="filter-hero__fade"></div>
+      </div>
+      <div class="filter-hero__inner">
+        <div data-partial="header"></div>
+        <h1>Dovolenka Turecko, Grécko a ostrovy,<br>Severný Cyprus</h1>
+      </div>
+    </section>
+
+    <div class="col filter-layout">
+      <aside class="filter-side" aria-label="Filter">
+        <form class="filter-search">
+          <button class="field" type="button">
+            <span class="field__label">Kam to bude?</span>
+            <span class="field__value">Turecko, Grécko a ostrovy</span>
+            <svg class="icon" width="16" height="16" aria-hidden="true"><use href="#i-chevron-down"></use></svg>
+          </button>
+          <button class="field" type="button">
+            <span class="field__label">Kedy?</span>
+            <span class="field__value">11.6. — 18.6.</span>
+            <svg class="icon" width="16" height="16" aria-hidden="true"><use href="#i-chevron-down"></use></svg>
+          </button>
+          <button class="field" type="button">
+            <span class="field__label">koľko vás bude?</span>
+            <span class="field__value">2 dospelí</span>
+            <svg class="icon" width="16" height="16" aria-hidden="true"><use href="#i-chevron-down"></use></svg>
+          </button>
+          <button class="btn btn--fill" type="submit">
+            Vyhľadať
+            <svg class="icon" width="22" height="22" aria-hidden="true"><use href="#i-search-btn"></use></svg>
+          </button>
+        </form>
+
+        <div class="filter-panel">
+          <section class="filter-param">
+            <h2>Doprava</h2>
+            <ul>
+              <li><button class="check is-on" type="button"><span class="check__box"></span><span class="check__name">letecká</span><span class="check__n">12</span></button></li>
+              <li><button class="check" type="button"><span class="check__box"></span><span class="check__name">autobusová</span><span class="check__n">7</span></button></li>
+              <li><button class="check" type="button"><span class="check__box"></span><span class="check__name">individuálna</span><span class="check__n">3</span></button></li>
+            </ul>
+          </section>
+          <hr>
+          <section class="filter-param">
+            <h2>Letiská</h2>
+            <ul>
+              <li><button class="check" type="button"><span class="check__box"></span><span class="check__name">Bratislava</span><span class="check__n">12</span></button></li>
+              <li><button class="check is-on" type="button"><span class="check__box"></span><span class="check__name">Piešťany</span><span class="check__n">3</span></button></li>
+              <li><button class="check" type="button"><span class="check__box"></span><span class="check__name">Košice</span><span class="check__n">8</span></button></li>
+            </ul>
+          </section>
+          <hr>
+          <section class="filter-param">
+            <h2>Stravovanie</h2>
+            <ul>
+              <li><button class="check is-on" type="button"><span class="check__box"></span><span class="check__name">all inclusive</span><span class="check__n">12</span></button></li>
+              <li><button class="check" type="button"><span class="check__box"></span><span class="check__name">polpenzia</span><span class="check__n">2</span></button></li>
+              <li><button class="check" type="button"><span class="check__box"></span><span class="check__name">raňajky</span><span class="check__n">1</span></button></li>
+            </ul>
+          </section>
+          <hr>
+          <section class="filter-param">
+            <h2>Cena</h2>
+            <div class="range">
+              <div class="range__track">
+                <span class="range__knob range__knob--a"></span>
+                <span class="range__knob range__knob--b"></span>
+              </div>
+              <div class="range__labels"><span>od 433€</span><span>do 1492€</span></div>
+            </div>
+          </section>
+          <hr>
+          <section class="filter-param">
+            <h2>Hodnotenie</h2>
+            <ul>
+              <li><button class="check is-on" type="button"><span class="check__box"></span><span class="check__name"><span class="suns" aria-label="5 slniečok"><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon sun--off" aria-hidden="true"><use href="#i-sun"></use></svg></span></span><span class="check__n">7</span></button></li>
+              <li><button class="check" type="button"><span class="check__box"></span><span class="check__name"><span class="suns" aria-label="4 slniečka"><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon sun--off" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon sun--off" aria-hidden="true"><use href="#i-sun"></use></svg></span></span><span class="check__n">5</span></button></li>
+              <li><button class="check" type="button"><span class="check__box"></span><span class="check__name"><span class="suns" aria-label="3 slniečka"><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon sun--off" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon sun--off" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon sun--off" aria-hidden="true"><use href="#i-sun"></use></svg></span></span><span class="check__n">1</span></button></li>
+            </ul>
+          </section>
+          <hr>
+          <section class="filter-param">
+            <h2>Dĺžka pobytu</h2>
+            <div class="range">
+              <div class="range__track">
+                <span class="range__knob range__knob--a"></span>
+                <span class="range__knob range__knob--b"></span>
+              </div>
+              <div class="range__labels"><span>8 dní</span><span>15 dní</span></div>
+            </div>
+          </section>
+        </div>
+      </aside>
+
+      <div class="filter-main">
+        <div class="results-bar">
+          <div class="results-bar__count">
+            <p>22 hotelov</p>
+            <span></span>
+          </div>
+          <div class="sort-menu">
+            <button class="btn btn--ink" type="button" data-sort-open aria-expanded="false" aria-controls="sort-panel">
+              Radiť podľa: <span data-sort-label>Najbližší termín</span>
+              <svg class="icon" width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><path d="M9.25833 14.9417C8.98333 14.9417 8.8 14.7583 8.8 14.4833C8.8 14.2083 8.98333 14.025 9.25833 14.025H12.7417C13.0167 14.025 13.2 14.2083 13.2 14.4833C13.2 14.7583 13.0167 14.9417 12.7417 14.9417H9.25833ZM6.875 11.4583C6.6 11.4583 6.41667 11.275 6.41667 11C6.41667 10.725 6.6 10.5417 6.875 10.5417H15.125C15.4 10.5417 15.5833 10.725 15.5833 11C15.5833 11.275 15.4 11.4583 15.125 11.4583H6.875ZM4.58333 7.975C4.30833 7.975 4.125 7.79167 4.125 7.51667C4.125 7.24167 4.30833 7.05833 4.58333 7.05833H17.4167C17.6917 7.05833 17.875 7.24167 17.875 7.51667C17.875 7.79167 17.6917 7.975 17.4167 7.975H4.58333Z" fill="currentColor"/></svg>
+            </button>
+            <div class="sort-menu__panel" id="sort-panel" data-sort-panel hidden role="menu">
+              <button class="sort-menu__row" type="button" role="menuitem"><span>Najbližší termín</span></button>
+              <button class="sort-menu__row" type="button" role="menuitem"><span>Najnižšia cena</span></button>
+              <button class="sort-menu__row" type="button" role="menuitem"><span>Najvyššia cena</span></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="filter-list">
+          <article class="hotel-card hotel-card--list">
+            <div class="hotel-card__top">
+              <div>
+                <p class="hotel-card__place">Turecko <svg class="icon" width="9" height="15" aria-hidden="true"><use href="#i-dest-chevron"></use></svg> Side</p>
+                <h3 class="hotel-card__name"><a href="hotel.html">Serra Park</a></h3>
+                <p class="hotel-card__type">depandance hotela <span class="suns" aria-label="5 a pol slnka"><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon sun--half" aria-hidden="true"><use href="#i-sun"></use></svg></span></p>
+              </div>
+              <div class="hotel-card__icons">
+                <div class="hotel-card__tags"><span class="tag tag--cyan">TOP hotel</span><span class="tag tag--purple">Nočný život</span></div>
+                <svg class="icon" width="30" height="30" aria-hidden="true"><use href="#i-play"></use></svg>
+                <svg class="icon" width="30" height="30" aria-hidden="true"><use href="#i-heart-card"></use></svg>
+              </div>
+            </div>
+            <div class="hotel-card__row">
+              <div class="hotel-card__shot">
+                <img src="vizualy/hotel-main.png" alt="">
+                <button class="hotel-card__next" type="button" aria-label="Ďalšia fotka"><svg class="icon" width="20" height="20" aria-hidden="true"><use href="#i-chevron-right"></use></svg></button>
+                <svg class="hotel-card__dots" aria-hidden="true"><use href="#i-dots"></use></svg>
+              </div>
+              <div class="hotel-card__terms">
+                <div class="deal">
+                  <div class="deal__when"><p class="is-strong"><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-calendar"></use></svg>11.6. — 18.6.</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-moon"></use></svg>8 dní / 7 nocí</p></div>
+                  <div class="deal__way"><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-plane"></use></svg>BA</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-food"></use></svg>all inclusive</p></div>
+                  <p class="deal__price"><span>zľava <b>43%</b></span><strong>od 483 €<small> / osoba</small></strong></p>
+                  <div class="deal__cta"></div>
+                </div>
+                <div class="deal">
+                  <div class="deal__when"><p class="is-strong"><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-calendar"></use></svg>13.7. — 20.7.</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-moon"></use></svg>8 dní / 7 nocí</p></div>
+                  <div class="deal__way"><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-plane"></use></svg>BA</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-food"></use></svg>all inclusive</p></div>
+                  <p class="deal__price"><span>zľava <b>43%</b></span><strong>od 483 €<small> / osoba</small></strong></p>
+                  <div class="deal__cta"><a class="btn btn--outline" href="kalkulacia.html">Kalkuluj <svg class="icon" width="22" height="22" aria-hidden="true"><use href="#i-chevron-down"></use></svg></a></div>
+                </div>
+                <div class="deal">
+                  <div class="deal__when"><p class="is-strong"><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-calendar"></use></svg>11.6. — 18.6.</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-moon"></use></svg>8 dní / 7 nocí</p></div>
+                  <div class="deal__way"><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-plane"></use></svg>BA</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-food"></use></svg>all inclusive</p></div>
+                  <p class="deal__price"><span>zľava <b>43%</b></span><strong>od 483 €<small> / osoba</small></strong></p>
+                  <div class="deal__cta"></div>
+                </div>
+              </div>
+            </div>
+            <p class="hotel-card__more"><span></span><a href="hotel.html#terminy">viac termínov</a></p>
+          </article>
+
+          <article class="hotel-card hotel-card--list">
+            <div class="hotel-card__top">
+              <div>
+                <p class="hotel-card__place">Severný Cyprus <svg class="icon" width="9" height="15" aria-hidden="true"><use href="#i-dest-chevron"></use></svg> Famagusta</p>
+                <h3 class="hotel-card__name"><a href="hotel.html">Salamis Bay Conti</a></h3>
+                <p class="hotel-card__type">hotelový komplex <span class="suns" aria-label="5 a pol slnka"><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon sun--half" aria-hidden="true"><use href="#i-sun"></use></svg></span></p>
+              </div>
+              <div class="hotel-card__icons">
+                <div class="hotel-card__tags"><span class="tag tag--cyan">TOP hotel</span><span class="tag tag--purple">Novinka</span></div>
+                <svg class="icon" width="30" height="30" aria-hidden="true"><use href="#i-play"></use></svg>
+                <svg class="icon" width="30" height="30" aria-hidden="true"><use href="#i-heart-card"></use></svg>
+              </div>
+            </div>
+            <div class="hotel-card__row">
+              <div class="hotel-card__shot">
+                <img src="vizualy/salamis.jpg" alt="">
+                <button class="hotel-card__next" type="button" aria-label="Ďalšia fotka"><svg class="icon" width="20" height="20" aria-hidden="true"><use href="#i-chevron-right"></use></svg></button>
+                <svg class="hotel-card__dots" aria-hidden="true"><use href="#i-dots"></use></svg>
+              </div>
+              <div class="hotel-card__terms">
+                <div class="deal"><div class="deal__when"><p class="is-strong"><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-calendar"></use></svg>11.6. — 18.6.</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-moon"></use></svg>8 dní / 7 nocí</p></div><div class="deal__way"><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-plane"></use></svg>BA</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-food"></use></svg>all inclusive</p></div><p class="deal__price"><span>zľava <b>43%</b></span><strong>od 483 €<small> / osoba</small></strong></p><div class="deal__cta"></div></div>
+                <div class="deal"><div class="deal__when"><p class="is-strong"><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-calendar"></use></svg>13.7. — 20.7.</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-moon"></use></svg>8 dní / 7 nocí</p></div><div class="deal__way"><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-plane"></use></svg>BA</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-food"></use></svg>all inclusive</p></div><p class="deal__price"><span>zľava <b>43%</b></span><strong>od 483 €<small> / osoba</small></strong></p><div class="deal__cta"><a class="btn btn--outline" href="kalkulacia.html">Kalkuluj <svg class="icon" width="22" height="22" aria-hidden="true"><use href="#i-chevron-down"></use></svg></a></div></div>
+                <div class="deal"><div class="deal__when"><p class="is-strong"><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-calendar"></use></svg>11.6. — 18.6.</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-moon"></use></svg>8 dní / 7 nocí</p></div><div class="deal__way"><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-plane"></use></svg>BA</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-food"></use></svg>all inclusive</p></div><p class="deal__price"><span>zľava <b>43%</b></span><strong>od 483 €<small> / osoba</small></strong></p><div class="deal__cta"></div></div>
+              </div>
+            </div>
+            <p class="hotel-card__more"><span></span><a href="hotel.html#terminy">viac termínov</a></p>
+          </article>
+
+          <article class="hotel-card hotel-card--list">
+            <div class="hotel-card__top">
+              <div>
+                <p class="hotel-card__place">Turecko <svg class="icon" width="9" height="15" aria-hidden="true"><use href="#i-dest-chevron"></use></svg> Side</p>
+                <h3 class="hotel-card__name"><a href="hotel.html">IC Santai Family Resort</a></h3>
+                <p class="hotel-card__type">hotelový komplex <span class="suns" aria-label="5 a pol slnka"><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon sun--half" aria-hidden="true"><use href="#i-sun"></use></svg></span></p>
+              </div>
+              <div class="hotel-card__icons">
+                <div class="hotel-card__tags"><span class="tag tag--purple">Novinka</span><span class="tag tag--red">Akciový hotel</span></div>
+                <svg class="icon" width="30" height="30" aria-hidden="true"><use href="#i-play"></use></svg>
+                <svg class="icon" width="30" height="30" aria-hidden="true"><use href="#i-heart-card"></use></svg>
+              </div>
+            </div>
+            <div class="hotel-card__row">
+              <div class="hotel-card__shot"><img src="vizualy/santai.png" alt=""><button class="hotel-card__next" type="button" aria-label="Ďalšia fotka"><svg class="icon" width="20" height="20" aria-hidden="true"><use href="#i-chevron-right"></use></svg></button><svg class="hotel-card__dots" aria-hidden="true"><use href="#i-dots"></use></svg></div>
+              <div class="hotel-card__terms">
+                <div class="deal"><div class="deal__when"><p class="is-strong"><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-calendar"></use></svg>11.6. — 18.6.</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-moon"></use></svg>8 dní / 7 nocí</p></div><div class="deal__way"><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-plane"></use></svg>BA</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-food"></use></svg>all inclusive</p></div><p class="deal__price"><span>zľava <b>43%</b></span><strong>od 483 €<small> / osoba</small></strong></p><div class="deal__cta"></div></div>
+                <div class="deal"><div class="deal__when"><p class="is-strong"><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-calendar"></use></svg>13.7. — 20.7.</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-moon"></use></svg>8 dní / 7 nocí</p></div><div class="deal__way"><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-plane"></use></svg>BA</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-food"></use></svg>all inclusive</p></div><p class="deal__price"><span>zľava <b>43%</b></span><strong>od 483 €<small> / osoba</small></strong></p><div class="deal__cta"><a class="btn btn--outline" href="kalkulacia.html">Kalkuluj <svg class="icon" width="22" height="22" aria-hidden="true"><use href="#i-chevron-down"></use></svg></a></div></div>
+                <div class="deal"><div class="deal__when"><p class="is-strong"><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-calendar"></use></svg>11.6. — 18.6.</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-moon"></use></svg>8 dní / 7 nocí</p></div><div class="deal__way"><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-plane"></use></svg>BA</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-food"></use></svg>all inclusive</p></div><p class="deal__price"><span>zľava <b>43%</b></span><strong>od 483 €<small> / osoba</small></strong></p><div class="deal__cta"></div></div>
+              </div>
+            </div>
+            <p class="hotel-card__more"><span></span><a href="hotel.html#terminy">viac termínov</a></p>
+          </article>
+
+          <article class="hotel-card hotel-card--list">
+            <div class="hotel-card__top">
+              <div>
+                <p class="hotel-card__place">Rhodos <svg class="icon" width="9" height="15" aria-hidden="true"><use href="#i-dest-chevron"></use></svg> Faliraki</p>
+                <h3 class="hotel-card__name"><a href="hotel.html">Evi</a></h3>
+                <p class="hotel-card__type">hotel <span class="suns" aria-label="5 a pol slnka"><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon sun--half" aria-hidden="true"><use href="#i-sun"></use></svg></span></p>
+              </div>
+              <div class="hotel-card__icons">
+                <div class="hotel-card__tags"><span class="tag tag--cyan">TOP hotel</span><span class="tag tag--purple">Novinka</span></div>
+                <svg class="icon" width="30" height="30" aria-hidden="true"><use href="#i-play"></use></svg>
+                <svg class="icon" width="30" height="30" aria-hidden="true"><use href="#i-heart-card"></use></svg>
+              </div>
+            </div>
+            <div class="hotel-card__row">
+              <div class="hotel-card__shot"><img src="vizualy/evi.png" alt=""><button class="hotel-card__next" type="button" aria-label="Ďalšia fotka"><svg class="icon" width="20" height="20" aria-hidden="true"><use href="#i-chevron-right"></use></svg></button><svg class="hotel-card__dots" aria-hidden="true"><use href="#i-dots"></use></svg></div>
+              <div class="hotel-card__terms">
+                <div class="deal"><div class="deal__when"><p class="is-strong"><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-calendar"></use></svg>11.6. — 18.6.</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-moon"></use></svg>8 dní / 7 nocí</p></div><div class="deal__way"><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-plane"></use></svg>BA</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-food"></use></svg>all inclusive</p></div><p class="deal__price"><span>zľava <b>43%</b></span><strong>od 483 €<small> / osoba</small></strong></p><div class="deal__cta"></div></div>
+                <div class="deal"><div class="deal__when"><p class="is-strong"><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-calendar"></use></svg>13.7. — 20.7.</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-moon"></use></svg>8 dní / 7 nocí</p></div><div class="deal__way"><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-plane"></use></svg>BA</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-food"></use></svg>all inclusive</p></div><p class="deal__price"><span>zľava <b>43%</b></span><strong>od 483 €<small> / osoba</small></strong></p><div class="deal__cta"><a class="btn btn--outline" href="kalkulacia.html">Kalkuluj <svg class="icon" width="22" height="22" aria-hidden="true"><use href="#i-chevron-down"></use></svg></a></div></div>
+                <div class="deal"><div class="deal__when"><p class="is-strong"><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-calendar"></use></svg>11.6. — 18.6.</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-moon"></use></svg>8 dní / 7 nocí</p></div><div class="deal__way"><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-plane"></use></svg>BA</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-food"></use></svg>all inclusive</p></div><p class="deal__price"><span>zľava <b>43%</b></span><strong>od 483 €<small> / osoba</small></strong></p><div class="deal__cta"></div></div>
+              </div>
+            </div>
+            <p class="hotel-card__more"><span></span><a href="hotel.html#terminy">viac termínov</a></p>
+          </article>
+
+          <article class="hotel-card hotel-card--list">
+            <div class="hotel-card__top">
+              <div>
+                <p class="hotel-card__place">Rhodos <svg class="icon" width="9" height="15" aria-hidden="true"><use href="#i-dest-chevron"></use></svg> Kolymbia</p>
+                <h3 class="hotel-card__name"><a href="hotel.html">Lydia Maris Resort &amp; Spa</a></h3>
+                <p class="hotel-card__type">hotelový komplex <span class="suns" aria-label="5 a pol slnka"><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon sun--half" aria-hidden="true"><use href="#i-sun"></use></svg></span></p>
+              </div>
+              <div class="hotel-card__icons">
+                <div class="hotel-card__tags"><span class="tag tag--purple">Novinka</span><span class="tag tag--red">Akciový hotel</span></div>
+                <svg class="icon" width="30" height="30" aria-hidden="true"><use href="#i-play"></use></svg>
+                <svg class="icon" width="30" height="30" aria-hidden="true"><use href="#i-heart-card"></use></svg>
+              </div>
+            </div>
+            <div class="hotel-card__row">
+              <div class="hotel-card__shot"><img src="vizualy/lydia.png" alt=""><button class="hotel-card__next" type="button" aria-label="Ďalšia fotka"><svg class="icon" width="20" height="20" aria-hidden="true"><use href="#i-chevron-right"></use></svg></button><svg class="hotel-card__dots" aria-hidden="true"><use href="#i-dots"></use></svg></div>
+              <div class="hotel-card__terms">
+                <div class="deal"><div class="deal__when"><p class="is-strong"><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-calendar"></use></svg>11.6. — 18.6.</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-moon"></use></svg>8 dní / 7 nocí</p></div><div class="deal__way"><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-plane"></use></svg>BA</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-food"></use></svg>all inclusive</p></div><p class="deal__price"><span>zľava <b>43%</b></span><strong>od 483 €<small> / osoba</small></strong></p><div class="deal__cta"></div></div>
+                <div class="deal"><div class="deal__when"><p class="is-strong"><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-calendar"></use></svg>13.7. — 20.7.</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-moon"></use></svg>8 dní / 7 nocí</p></div><div class="deal__way"><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-plane"></use></svg>BA</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-food"></use></svg>all inclusive</p></div><p class="deal__price"><span>zľava <b>43%</b></span><strong>od 483 €<small> / osoba</small></strong></p><div class="deal__cta"><a class="btn btn--outline" href="kalkulacia.html">Kalkuluj <svg class="icon" width="22" height="22" aria-hidden="true"><use href="#i-chevron-down"></use></svg></a></div></div>
+                <div class="deal"><div class="deal__when"><p class="is-strong"><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-calendar"></use></svg>11.6. — 18.6.</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-moon"></use></svg>8 dní / 7 nocí</p></div><div class="deal__way"><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-plane"></use></svg>BA</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-food"></use></svg>all inclusive</p></div><p class="deal__price"><span>zľava <b>43%</b></span><strong>od 483 €<small> / osoba</small></strong></p><div class="deal__cta"></div></div>
+              </div>
+            </div>
+            <p class="hotel-card__more"><span></span><a href="hotel.html#terminy">viac termínov</a></p>
+          </article>
+
+          <article class="hotel-card hotel-card--list">
+            <div class="hotel-card__top">
+              <div>
+                <p class="hotel-card__place">Turecko <svg class="icon" width="9" height="15" aria-hidden="true"><use href="#i-dest-chevron"></use></svg> Side</p>
+                <h3 class="hotel-card__name"><a href="hotel.html">Sorgun Akadia Luxury</a></h3>
+                <p class="hotel-card__type">hotelový komplex <span class="suns" aria-label="5 a pol slnka"><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon sun--half" aria-hidden="true"><use href="#i-sun"></use></svg></span></p>
+              </div>
+              <div class="hotel-card__icons">
+                <div class="hotel-card__tags"><span class="tag tag--cyan">TOP hotel</span></div>
+                <svg class="icon" width="30" height="30" aria-hidden="true"><use href="#i-play"></use></svg>
+                <svg class="icon" width="30" height="30" aria-hidden="true"><use href="#i-heart-card"></use></svg>
+              </div>
+            </div>
+            <div class="hotel-card__row">
+              <div class="hotel-card__shot"><img src="vizualy/sorgun.png" alt=""><button class="hotel-card__next" type="button" aria-label="Ďalšia fotka"><svg class="icon" width="20" height="20" aria-hidden="true"><use href="#i-chevron-right"></use></svg></button><svg class="hotel-card__dots" aria-hidden="true"><use href="#i-dots"></use></svg></div>
+              <div class="hotel-card__terms">
+                <div class="deal"><div class="deal__when"><p class="is-strong"><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-calendar"></use></svg>11.6. — 18.6.</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-moon"></use></svg>8 dní / 7 nocí</p></div><div class="deal__way"><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-plane"></use></svg>BA</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-food"></use></svg>all inclusive</p></div><p class="deal__price"><span>zľava <b>43%</b></span><strong>od 483 €<small> / osoba</small></strong></p><div class="deal__cta"></div></div>
+                <div class="deal"><div class="deal__when"><p class="is-strong"><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-calendar"></use></svg>13.7. — 20.7.</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-moon"></use></svg>8 dní / 7 nocí</p></div><div class="deal__way"><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-plane"></use></svg>BA</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-food"></use></svg>all inclusive</p></div><p class="deal__price"><span>zľava <b>43%</b></span><strong>od 483 €<small> / osoba</small></strong></p><div class="deal__cta"><a class="btn btn--outline" href="kalkulacia.html">Kalkuluj <svg class="icon" width="22" height="22" aria-hidden="true"><use href="#i-chevron-down"></use></svg></a></div></div>
+                <div class="deal"><div class="deal__when"><p class="is-strong"><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-calendar"></use></svg>11.6. — 18.6.</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-moon"></use></svg>8 dní / 7 nocí</p></div><div class="deal__way"><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-plane"></use></svg>BA</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-food"></use></svg>all inclusive</p></div><p class="deal__price"><span>zľava <b>43%</b></span><strong>od 483 €<small> / osoba</small></strong></p><div class="deal__cta"></div></div>
+              </div>
+            </div>
+            <p class="hotel-card__more"><span></span><a href="hotel.html#terminy">viac termínov</a></p>
+          </article>
+
+          <article class="hotel-card hotel-card--list">
+            <div class="hotel-card__top">
+              <div>
+                <p class="hotel-card__place">Cyprus <svg class="icon" width="9" height="15" aria-hidden="true"><use href="#i-dest-chevron"></use></svg> Paphos</p>
+                <h3 class="hotel-card__name"><a href="hotel.html">Thalassa Boutique Hotel &amp; Spa</a></h3>
+                <p class="hotel-card__type">hotel <span class="suns" aria-label="5 a pol slnka"><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon sun--half" aria-hidden="true"><use href="#i-sun"></use></svg></span></p>
+              </div>
+              <div class="hotel-card__icons">
+                <div class="hotel-card__tags"><span class="tag tag--purple">Novinka</span></div>
+                <svg class="icon" width="30" height="30" aria-hidden="true"><use href="#i-play"></use></svg>
+                <svg class="icon" width="30" height="30" aria-hidden="true"><use href="#i-heart-card"></use></svg>
+              </div>
+            </div>
+            <div class="hotel-card__row">
+              <div class="hotel-card__shot"><img src="vizualy/cameo.jpg" alt=""><button class="hotel-card__next" type="button" aria-label="Ďalšia fotka"><svg class="icon" width="20" height="20" aria-hidden="true"><use href="#i-chevron-right"></use></svg></button><svg class="hotel-card__dots" aria-hidden="true"><use href="#i-dots"></use></svg></div>
+              <div class="hotel-card__terms">
+                <div class="deal"><div class="deal__when"><p class="is-strong"><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-calendar"></use></svg>11.6. — 18.6.</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-moon"></use></svg>8 dní / 7 nocí</p></div><div class="deal__way"><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-plane"></use></svg>BA</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-food"></use></svg>all inclusive</p></div><p class="deal__price"><span>zľava <b>43%</b></span><strong>od 483 €<small> / osoba</small></strong></p><div class="deal__cta"></div></div>
+                <div class="deal"><div class="deal__when"><p class="is-strong"><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-calendar"></use></svg>13.7. — 20.7.</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-moon"></use></svg>8 dní / 7 nocí</p></div><div class="deal__way"><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-plane"></use></svg>BA</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-food"></use></svg>all inclusive</p></div><p class="deal__price"><span>zľava <b>43%</b></span><strong>od 483 €<small> / osoba</small></strong></p><div class="deal__cta"><a class="btn btn--outline" href="kalkulacia.html">Kalkuluj <svg class="icon" width="22" height="22" aria-hidden="true"><use href="#i-chevron-down"></use></svg></a></div></div>
+                <div class="deal"><div class="deal__when"><p class="is-strong"><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-calendar"></use></svg>11.6. — 18.6.</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-moon"></use></svg>8 dní / 7 nocí</p></div><div class="deal__way"><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-plane"></use></svg>BA</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-food"></use></svg>all inclusive</p></div><p class="deal__price"><span>zľava <b>43%</b></span><strong>od 483 €<small> / osoba</small></strong></p><div class="deal__cta"></div></div>
+              </div>
+            </div>
+            <p class="hotel-card__more"><span></span><a href="hotel.html#terminy">viac termínov</a></p>
+          </article>
+        </div>
+
+        <nav class="pager" aria-label="Stránky">
+          <div class="pager__nums">
+            <a class="is-active" href="filter.html" aria-current="page">1</a>
+            <a href="filter.html">2</a>
+            <a href="filter.html">3</a>
+            <a href="filter.html">4</a>
+            <a href="filter.html">5</a>
+          </div>
+          <a class="btn btn--outline" href="filter.html">Zobraziť viac <svg class="icon" width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><path d="M9.9 16.775V12.1H5.225V9.9H9.9V5.225H12.1V9.9H16.775V12.1H12.1V16.775H9.9Z" fill="currentColor"/></svg></a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="block" data-partial="footer"></div>
+  </div>
+  <div class="mfilter">
+    <header class="mfhero">
+      <div class="mfhero__photo"><img src="vizualy/filter-hero.jpg" alt=""></div>
+      <div class="mfhero__dim"></div>
+      <div class="mfhero__grad"></div>
+      <div class="mbar">
+        <div class="mbar__side">
+          <a class="mbar__hit" href="kontakty.html" aria-label="Kontakty"><svg class="icon" width="34" height="34" aria-hidden="true"><use href="#i-phone"></use></svg></a>
+          <a class="mbar__hit" href="#" aria-label="Obľúbené"><svg class="icon" width="34" height="34" aria-hidden="true"><use href="#i-heart"></use></svg></a>
+        </div>
+        <a class="mbar__logo" href="index.html" aria-label="Koala tours"><img src="vizualy/mobile/logo.svg" alt="" width="130" height="44"></a>
+        <div class="mbar__side mbar__side--end">
+          <button class="mbar__hit" type="button" aria-label="Hľadať"><svg class="icon" width="34" height="34" aria-hidden="true"><use href="#i-search"></use></svg></button>
+          <button class="mbar__hit" type="button" data-mnav-open aria-expanded="false" aria-controls="mnav" aria-label="Menu"><img src="vizualy/mobile/icon-menu.svg" alt="" width="34" height="34"></button>
+        </div>
+      </div>
+      <h1>Dovolenka Turecko,<br>Grécko a ostrovy,<br>Severný Cyprus</h1>
+    </header>
+    <div class="mfilter__body">
+      <form class="mfind" action="filter.html">
+        <div class="mfind__stack">
+          <button class="field" type="button">
+            <span class="field__label">Kam to bude?</span>
+            <span class="field__value">nerozhoduje</span>
+            <svg class="icon" width="16" height="16" aria-hidden="true"><use href="#i-chevron-down"></use></svg>
+          </button>
+          <div class="mfind__pair">
+            <button class="field" type="button">
+              <span class="field__label">Kedy?</span>
+              <span class="field__value">11.6. — 18.6.</span>
+              <svg class="icon" width="16" height="16" aria-hidden="true"><use href="#i-chevron-down"></use></svg>
+            </button>
+            <button class="field" type="button">
+              <span class="field__label">Koľko vás bude?</span>
+              <span class="field__value">2 dospelí</span>
+              <svg class="icon" width="16" height="16" aria-hidden="true"><use href="#i-chevron-down"></use></svg>
+            </button>
+          </div>
+          <button class="btn btn--fill" type="submit">Vyhľadať<svg class="icon" width="22" height="22" aria-hidden="true"><use href="#i-search-btn"></use></svg></button>
+        </div>
+      </form>
+      <div class="mresults">
+        <p class="mresults__count">22 hotelov</p>
+        <button class="mresults__filter" type="button" aria-label="Filter"><img src="vizualy/mobile/icon-params.svg" alt="" width="22" height="22"></button>
+        <button class="mresults__sort" type="button">Najbližší termín<svg class="icon" width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><path d="M9.25833 14.9417C8.98333 14.9417 8.8 14.7583 8.8 14.4833C8.8 14.2083 8.98333 14.025 9.25833 14.025H12.7417C13.0167 14.025 13.2 14.2083 13.2 14.4833C13.2 14.7583 13.0167 14.9417 12.7417 14.9417H9.25833ZM6.875 11.4583C6.6 11.4583 6.41667 11.275 6.41667 11C6.41667 10.725 6.6 10.5417 6.875 10.5417H15.125C15.4 10.5417 15.5833 10.725 15.5833 11C15.5833 11.275 15.4 11.4583 15.125 11.4583H6.875ZM4.58333 7.975C4.30833 7.975 4.125 7.79167 4.125 7.51667C4.125 7.24167 4.30833 7.05833 4.58333 7.05833H17.4167C17.6917 7.05833 17.875 7.24167 17.875 7.51667C17.875 7.79167 17.6917 7.975 17.4167 7.975H4.58333Z" fill="currentColor"/></svg></button>
+      </div>
+      <div class="mcards">
+        <article class="mcard">
+          <div class="mcard__shot">
+            <a href="hotel.html"><img src="vizualy/hotel-main.png" alt=""></a>
+            <div class="mcard__tags"><span class="tag tag--cyan">TOP hotel</span><span class="tag tag--purple">Nočný život</span></div>
+            <div class="mcard__tools"><svg class="icon" width="30" height="30" aria-hidden="true"><use href="#i-play"></use></svg><svg class="icon" width="30" height="30" aria-hidden="true"><use href="#i-heart-card"></use></svg></div>
+            <button class="mcard__next" type="button" aria-label="Ďalšia fotka"><svg class="icon" width="20" height="20" aria-hidden="true"><use href="#i-chevron-right"></use></svg></button>
+            <svg class="mcard__dots" aria-hidden="true"><use href="#i-dots"></use></svg>
+          </div>
+          <div class="mcard__body">
+            <div class="mcard__head">
+              <p class="mcard__place">Turecko <svg class="icon" width="9" height="15" aria-hidden="true"><use href="#i-dest-chevron"></use></svg> Side</p>
+              <h2 class="mcard__name"><a href="hotel.html">Serra Park</a></h2>
+              <p class="mcard__type">depandance hotela <span class="suns" aria-label="5 a pol slnka"><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon sun--half" aria-hidden="true"><use href="#i-sun"></use></svg></span></p>
+            </div>
+            <div class="mcard__terms">
+              <div class="mterm"><div class="mterm__top"><div><p class="is-strong"><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-calendar"></use></svg>11.6. — 18.6.</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-moon"></use></svg>8 dní / 7 nocí</p></div><div><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-plane"></use></svg>BA</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-food"></use></svg>all inclusive</p></div></div><p class="mterm__price"><span class="mterm__cost">od 483 €<small> / os.</small></span><span class="mterm__sale">zľava <b>43%</b></span></p></div>
+              <div class="mterm"><div class="mterm__top"><div><p class="is-strong"><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-calendar"></use></svg>13.7. — 20.7.</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-moon"></use></svg>8 dní / 7 nocí</p></div><div><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-plane"></use></svg>BA</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-food"></use></svg>all inclusive</p></div></div><p class="mterm__price"><span class="mterm__cost">od 483 €<small> / os.</small></span><span class="mterm__sale">zľava <b>43%</b></span></p></div>
+              <div class="mterm"><div class="mterm__top"><div><p class="is-strong"><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-calendar"></use></svg>11.6. — 18.6.</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-moon"></use></svg>8 dní / 7 nocí</p></div><div><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-plane"></use></svg>BA</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-food"></use></svg>all inclusive</p></div></div><p class="mterm__price"><span class="mterm__cost">od 483 €<small> / os.</small></span><span class="mterm__sale">zľava <b>43%</b></span></p></div>
+            </div>
+          </div>
+          <a class="mcard__more" href="hotel.html#terminy">Viac termínov</a>
+        </article>
+        <article class="mcard">
+          <div class="mcard__shot">
+            <a href="hotel.html"><img src="vizualy/salamis.jpg" alt=""></a>
+            <div class="mcard__tags"><span class="tag tag--cyan">TOP hotel</span><span class="tag tag--purple">Novinka</span></div>
+            <div class="mcard__tools"><svg class="icon" width="30" height="30" aria-hidden="true"><use href="#i-play"></use></svg><svg class="icon" width="30" height="30" aria-hidden="true"><use href="#i-heart-card"></use></svg></div>
+            <button class="mcard__next" type="button" aria-label="Ďalšia fotka"><svg class="icon" width="20" height="20" aria-hidden="true"><use href="#i-chevron-right"></use></svg></button>
+            <svg class="mcard__dots" aria-hidden="true"><use href="#i-dots"></use></svg>
+          </div>
+          <div class="mcard__body">
+            <div class="mcard__head">
+              <p class="mcard__place">Severný Cyprus <svg class="icon" width="9" height="15" aria-hidden="true"><use href="#i-dest-chevron"></use></svg> Famagusta</p>
+              <h2 class="mcard__name"><a href="hotel.html">Salamis Bay Conti</a></h2>
+              <p class="mcard__type">hotelový komplex <span class="suns" aria-label="5 a pol slnka"><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon sun--half" aria-hidden="true"><use href="#i-sun"></use></svg></span></p>
+            </div>
+            <div class="mcard__terms">
+              <div class="mterm"><div class="mterm__top"><div><p class="is-strong"><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-calendar"></use></svg>11.6. — 18.6.</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-moon"></use></svg>8 dní / 7 nocí</p></div><div><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-plane"></use></svg>BA</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-food"></use></svg>all inclusive</p></div></div><p class="mterm__price"><span class="mterm__cost">od 483 €<small> / os.</small></span><span class="mterm__sale">zľava <b>43%</b></span></p></div>
+              <div class="mterm"><div class="mterm__top"><div><p class="is-strong"><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-calendar"></use></svg>11.6. — 18.6.</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-moon"></use></svg>8 dní / 7 nocí</p></div><div><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-plane"></use></svg>BA</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-food"></use></svg>all inclusive</p></div></div><p class="mterm__price"><span class="mterm__cost">od 483 €<small> / os.</small></span><span class="mterm__sale">zľava <b>43%</b></span></p></div>
+              <div class="mterm"><div class="mterm__top"><div><p class="is-strong"><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-calendar"></use></svg>11.6. — 18.6.</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-moon"></use></svg>8 dní / 7 nocí</p></div><div><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-plane"></use></svg>BA</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-food"></use></svg>all inclusive</p></div></div><p class="mterm__price"><span class="mterm__cost">od 483 €<small> / os.</small></span><span class="mterm__sale">zľava <b>43%</b></span></p></div>
+            </div>
+          </div>
+          <a class="mcard__more" href="hotel.html#terminy">Viac termínov</a>
+        </article>
+        <article class="mcard">
+          <div class="mcard__shot">
+            <a href="hotel.html"><img src="vizualy/hotel-2.png" alt=""></a>
+            <div class="mcard__tags"><span class="tag tag--cyan">TOP hotel</span><span class="tag tag--purple">Novinka</span></div>
+            <div class="mcard__tools"><svg class="icon" width="30" height="30" aria-hidden="true"><use href="#i-play"></use></svg><svg class="icon" width="30" height="30" aria-hidden="true"><use href="#i-heart-card"></use></svg></div>
+            <button class="mcard__next" type="button" aria-label="Ďalšia fotka"><svg class="icon" width="20" height="20" aria-hidden="true"><use href="#i-chevron-right"></use></svg></button>
+            <svg class="mcard__dots" aria-hidden="true"><use href="#i-dots"></use></svg>
+          </div>
+          <div class="mcard__body">
+            <div class="mcard__head">
+              <p class="mcard__place">Cyprus <svg class="icon" width="9" height="15" aria-hidden="true"><use href="#i-dest-chevron"></use></svg> Protaras</p>
+              <h2 class="mcard__name"><a href="hotel.html">Iliada Beach Hotel</a></h2>
+              <p class="mcard__type">hotel <span class="suns" aria-label="5 a pol slnka"><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon sun--half" aria-hidden="true"><use href="#i-sun"></use></svg></span></p>
+            </div>
+            <div class="mcard__terms">
+              <div class="mterm"><div class="mterm__top"><div><p class="is-strong"><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-calendar"></use></svg>11.6. — 18.6.</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-moon"></use></svg>8 dní / 7 nocí</p></div><div><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-plane"></use></svg>BA</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-food"></use></svg>all inclusive</p></div></div><p class="mterm__price"><span class="mterm__cost">od 483 €<small> / os.</small></span><span class="mterm__sale">zľava <b>43%</b></span></p></div>
+              <div class="mterm"><div class="mterm__top"><div><p class="is-strong"><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-calendar"></use></svg>11.6. — 18.6.</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-moon"></use></svg>8 dní / 7 nocí</p></div><div><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-plane"></use></svg>BA</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-food"></use></svg>all inclusive</p></div></div><p class="mterm__price"><span class="mterm__cost">od 483 €<small> / os.</small></span><span class="mterm__sale">zľava <b>43%</b></span></p></div>
+              <div class="mterm"><div class="mterm__top"><div><p class="is-strong"><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-calendar"></use></svg>11.6. — 18.6.</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-moon"></use></svg>8 dní / 7 nocí</p></div><div><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-plane"></use></svg>BA</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-food"></use></svg>all inclusive</p></div></div><p class="mterm__price"><span class="mterm__cost">od 483 €<small> / os.</small></span><span class="mterm__sale">zľava <b>43%</b></span></p></div>
+            </div>
+          </div>
+          <a class="mcard__more" href="hotel.html#terminy">Viac termínov</a>
+        </article>
+        <article class="mcard">
+          <div class="mcard__shot">
+            <a href="hotel.html"><img src="vizualy/hotel-3.png" alt=""></a>
+            <div class="mcard__tags"><span class="tag tag--cyan">TOP hotel</span><span class="tag tag--purple">Novinka</span></div>
+            <div class="mcard__tools"><svg class="icon" width="30" height="30" aria-hidden="true"><use href="#i-play"></use></svg><svg class="icon" width="30" height="30" aria-hidden="true"><use href="#i-heart-card"></use></svg></div>
+            <button class="mcard__next" type="button" aria-label="Ďalšia fotka"><svg class="icon" width="20" height="20" aria-hidden="true"><use href="#i-chevron-right"></use></svg></button>
+            <svg class="mcard__dots" aria-hidden="true"><use href="#i-dots"></use></svg>
+          </div>
+          <div class="mcard__body">
+            <div class="mcard__head">
+              <p class="mcard__place">Sardínia <svg class="icon" width="9" height="15" aria-hidden="true"><use href="#i-dest-chevron"></use></svg> Badesi</p>
+              <h2 class="mcard__name"><a href="hotel.html">Mimose Beach Village</a></h2>
+              <p class="mcard__type">hotelový komplex <span class="suns" aria-label="5 a pol slnka"><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon sun--half" aria-hidden="true"><use href="#i-sun"></use></svg></span></p>
+            </div>
+            <div class="mcard__terms">
+              <div class="mterm"><div class="mterm__top"><div><p class="is-strong"><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-calendar"></use></svg>11.6. — 18.6.</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-moon"></use></svg>8 dní / 7 nocí</p></div><div><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-plane"></use></svg>BA</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-food"></use></svg>all inclusive</p></div></div><p class="mterm__price"><span class="mterm__cost">od 483 €<small> / os.</small></span><span class="mterm__sale">zľava <b>43%</b></span></p></div>
+              <div class="mterm"><div class="mterm__top"><div><p class="is-strong"><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-calendar"></use></svg>11.6. — 18.6.</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-moon"></use></svg>8 dní / 7 nocí</p></div><div><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-plane"></use></svg>BA</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-food"></use></svg>all inclusive</p></div></div><p class="mterm__price"><span class="mterm__cost">od 483 €<small> / os.</small></span><span class="mterm__sale">zľava <b>43%</b></span></p></div>
+              <div class="mterm"><div class="mterm__top"><div><p class="is-strong"><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-calendar"></use></svg>11.6. — 18.6.</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-moon"></use></svg>8 dní / 7 nocí</p></div><div><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-plane"></use></svg>BA</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-food"></use></svg>all inclusive</p></div></div><p class="mterm__price"><span class="mterm__cost">od 483 €<small> / os.</small></span><span class="mterm__sale">zľava <b>43%</b></span></p></div>
+            </div>
+          </div>
+          <a class="mcard__more" href="hotel.html#terminy">Viac termínov</a>
+        </article>
+        <article class="mcard">
+          <div class="mcard__shot">
+            <a href="hotel.html"><img src="vizualy/hotel-4.png" alt=""></a>
+            <div class="mcard__tags"><span class="tag tag--red">Akciový hotel</span></div>
+            <div class="mcard__tools"><svg class="icon" width="30" height="30" aria-hidden="true"><use href="#i-play"></use></svg><svg class="icon" width="30" height="30" aria-hidden="true"><use href="#i-heart-card"></use></svg></div>
+            <button class="mcard__next" type="button" aria-label="Ďalšia fotka"><svg class="icon" width="20" height="20" aria-hidden="true"><use href="#i-chevron-right"></use></svg></button>
+            <svg class="mcard__dots" aria-hidden="true"><use href="#i-dots"></use></svg>
+          </div>
+          <div class="mcard__body">
+            <div class="mcard__head">
+              <p class="mcard__place">Turecko <svg class="icon" width="9" height="15" aria-hidden="true"><use href="#i-dest-chevron"></use></svg> Kemer</p>
+              <h2 class="mcard__name"><a href="hotel.html">Ma Biche Kemer by Werde Hotels</a></h2>
+              <p class="mcard__type">hotelový komplex <span class="suns" aria-label="5 a pol slnka"><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><svg class="icon sun--half" aria-hidden="true"><use href="#i-sun"></use></svg></span></p>
+            </div>
+            <div class="mcard__terms">
+              <div class="mterm"><div class="mterm__top"><div><p class="is-strong"><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-calendar"></use></svg>11.6. — 18.6.</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-moon"></use></svg>8 dní / 7 nocí</p></div><div><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-plane"></use></svg>BA</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-food"></use></svg>all inclusive</p></div></div><p class="mterm__price"><span class="mterm__cost">od 483 €<small> / os.</small></span><span class="mterm__sale">zľava <b>43%</b></span></p></div>
+              <div class="mterm"><div class="mterm__top"><div><p class="is-strong"><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-calendar"></use></svg>11.6. — 18.6.</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-moon"></use></svg>8 dní / 7 nocí</p></div><div><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-plane"></use></svg>BA</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-food"></use></svg>all inclusive</p></div></div><p class="mterm__price"><span class="mterm__cost">od 483 €<small> / os.</small></span><span class="mterm__sale">zľava <b>43%</b></span></p></div>
+              <div class="mterm"><div class="mterm__top"><div><p class="is-strong"><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-calendar"></use></svg>11.6. — 18.6.</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-moon"></use></svg>8 dní / 7 nocí</p></div><div><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-plane"></use></svg>BA</p><p><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#i-food"></use></svg>all inclusive</p></div></div><p class="mterm__price"><span class="mterm__cost">od 483 €<small> / os.</small></span><span class="mterm__sale">zľava <b>43%</b></span></p></div>
+            </div>
+          </div>
+          <a class="mcard__more" href="hotel.html#terminy">Viac termínov</a>
+        </article>
+      </div>
+      <section class="mnews" aria-label="Newsletter">
+        <div class="mnews__bg"><img src="vizualy/mobile/filter-news.png" alt=""></div>
+        <div class="mnews__shade"></div>
+        <div class="mnews__content">
+          <h2>Chcete vedieť<br>o najnovších ponukách<br>a aktuálnych akciách?<br>Prihláste sa do nášho newslettera.</h2>
+          <p class="mnews__lead">Získajte tak najlepšie ponuky – priamo do vášho e-mailu.</p>
+          <form class="mnews__card" action="#" method="post">
+            <input type="email" name="email" placeholder="Váš e-mail" aria-label="Váš e-mail">
+            <hr class="mnews__rule">
+            <button class="mnews__pref" type="button">Vaše preferencie<svg class="icon" width="16" height="16" aria-hidden="true"><use href="#i-chevron-down"></use></svg></button>
+            <button class="btn btn--fill" type="submit">Prihlásiť</button>
+          </form>
+          <label class="mnews__consent">
+            <input type="checkbox" name="consent">
+            <span>Prihlásením sa k odberu newslettrov súhlasíte so spracúvaním osobných údajov a profilovaním na účely zasielania personalizovaných marketingových ponúk a vyhlasujete, že ste sa oboznámil/a s Informáciou o spracúvaní osobných údajov.</span>
+          </label>
+        </div>
+      </section>
+      <footer class="mfoot">
+        <div class="mfoot__cols">
+          <nav class="foot-links" aria-label="Stránky">
+            <a href="blog.html">Blog</a>
+            <a href="statika.html">Katalóg</a>
+            <a href="kontakty.html">Kontakty</a>
+            <a href="pobocky.html">Pobočky</a>
+          </nav>
+          <div class="mfoot__groups">
+            <div class="foot-group">
+              <h3>Služby pre vás</h3>
+              <a href="#">Darčekový poukaz</a>
+              <a href="#">Dovolenka na splátky</a>
+              <a href="#">Nástupné miesta autobusov</a>
+              <a href="#">Parkovanie na leisku</a>
+              <a href="#">Poistenie</a>
+            </div>
+            <div class="foot-group">
+              <h3>Koala Tours</h3>
+              <a href="#">Ochrana osobných údajov</a>
+              <a href="statika.html">Katalóg</a>
+              <a href="kontakty.html">Kontakty</a>
+            </div>
+            <div class="foot-group">
+              <h3>Partneri</h3>
+              <a href="partner-login.html">Príhlásenie</a>
+              <a href="#">Sphere</a>
+            </div>
+          </div>
+        </div>
+        <div class="socials">
+          <a class="social" href="#"><span class="social__icon"><svg class="icon" width="30" height="30" aria-hidden="true"><use href="#i-instagram"></use></svg></span>instagram</a>
+          <a class="social" href="#"><span class="social__icon"><svg class="icon" width="30" height="30" aria-hidden="true"><use href="#i-facebook"></use></svg></span>facebook</a>
+          <a class="social" href="#"><span class="social__icon"><svg class="icon" width="30" height="30" aria-hidden="true"><use href="#i-youtube"></use></svg></span>youtube</a>
+        </div>
+        <p class="mfoot__copy">Copyright 2026 <a href="https://redred.sk" target="_blank" rel="noreferrer">redred.sk s.r.o.</a><br><a href="https://www.iscontent.cz" target="_blank" rel="noreferrer">redakčný systém is&gt;content</a> | <a href="https://www.istour.cz" target="_blank" rel="noreferrer">rezervačný systém is&gt;tour</a></p>
+        <hr class="mfoot__rule">
+        <div class="mfoot__legal">
+          <div>
+            <p>Cestovná kancelária Koala Tours, a.s. je zapísaná v obchodnom registri Mestského súdu Bratislava III, oddiel Sa, vložka č.2835/B | IČO: 35822244 | Dunajská 8, 811 08 Bratislava</p>
+            <p>Orgán dozoru a subjekt alternatívneho riešenia sporov: Slovenská obchodná inšpekcia, Inšpektorát SOI pre Bratislavský kraj, Bajkalská 21/A, P.O. Box 5, 820 07 Bratislava 27</p>
+          </div>
+          <button class="btn btn--line" type="button">Spravovať cookies</button>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <div class="mnav" id="mnav" data-mnav hidden role="dialog" aria-modal="true" aria-label="Menu">
+    <div class="mbar">
+      <div class="mbar__side">
+        <a class="mbar__hit" href="kontakty.html" aria-label="Kontakty"><svg class="icon" width="34" height="34" aria-hidden="true"><use href="#i-phone"></use></svg></a>
+        <a class="mbar__hit" href="#" aria-label="Obľúbené"><svg class="icon" width="34" height="34" aria-hidden="true"><use href="#i-heart"></use></svg></a>
+      </div>
+      <a class="mbar__logo" href="index.html" aria-label="Koala tours"><img src="vizualy/mobile/logo.svg" alt="" width="130" height="44"></a>
+      <div class="mbar__side mbar__side--end">
+        <button class="mbar__hit" type="button" aria-label="Hľadať"><svg class="icon" width="34" height="34" aria-hidden="true"><use href="#i-search"></use></svg></button>
+        <button class="mbar__hit" type="button" data-mnav-close aria-label="Zavrieť"><img src="vizualy/mobile/icon-close.svg" alt="" width="34" height="34"></button>
+      </div>
+    </div>
+    <nav aria-label="Hlavné menu">
+      <ul class="mnav__links">
+        <li><a href="filter.html">Last minute</a></li>
+        <li><a href="filter.html">More</a></li>
+        <li><a href="filter.html">Exotika</a></li>
+        <li><a href="filter.html">Poznávanie</a></li>
+        <li><a href="filter.html">Púte</a></li>
+      </ul>
+    </nav>
+    <hr class="mnav__rule">
+    <nav aria-label="Ďalšie">
+      <ul class="mnav__links">
+        <li><a href="kontakty.html">Kontakty</a></li>
+        <li><a href="pobocky.html">Pobočky</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="statika.html">Katalóg</a></li>
+        <li><a href="#">Poistenie</a></li>
+        <li><a href="#">Darčekový poukaz</a></li>
+      </ul>
+    </nav>
+    <hr class="mnav__rule">
+    <div class="mnav__social">
+      <a href="#" aria-label="instagram"><svg class="icon" width="30" height="30" aria-hidden="true"><use href="#i-instagram"></use></svg></a>
+      <a href="#" aria-label="facebook"><svg class="icon" width="30" height="30" aria-hidden="true"><use href="#i-facebook"></use></svg></a>
+      <a href="#" aria-label="youtube"><svg class="icon" width="30" height="30" aria-hidden="true"><use href="#i-youtube"></use></svg></a>
+    </div>
+  </div>
+  <script src="js/proto.js"></script>
+</body>
+</html>

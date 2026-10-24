@@ -1,0 +1,591 @@
+/* Mobile article from BLOG - ČLÁNOK - MOBILE 2024:23965. Fixed 390px, left-aligned.
+   From 768px up this file does not show, so the 1920px article stays. */
+
+.mblog {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .page {
+    display: none;
+  }
+
+  .mblog {
+    display: block;
+    width: 390px;
+    overflow-x: clip;
+    background: var(--white);
+    color: var(--black);
+  }
+
+  .mbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 360px;
+  }
+
+  .mbar__side {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+  }
+
+  .mbar__side--end {
+    justify-content: flex-end;
+  }
+
+  .mbar__logo {
+    flex: none;
+    width: 130px;
+    height: 44px;
+  }
+
+  .mbar__logo img,
+  .mbar__hit img {
+    display: block;
+  }
+
+  .mbar__hit {
+    display: flex;
+    width: 34px;
+    height: 34px;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+  }
+
+  .mblog__top {
+    padding: 15px 15px 0;
+  }
+
+  .mblog__top .mbar {
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--black-20);
+    color: var(--black);
+  }
+
+  .mblog__head {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 25px;
+  }
+
+  .mblog__head h1 {
+    color: var(--purple);
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: -0.7px;
+    line-height: normal;
+    text-box-trim: trim-both;
+    text-box-edge: cap alphabetic;
+  }
+
+  .mblog__head .article__meta {
+    font-size: 14px;
+    letter-spacing: -0.28px;
+  }
+
+  .mblog__flow {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 15px 0;
+  }
+
+  .mblog__hero {
+    display: block;
+    width: 360px;
+    height: 239.81px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .mprose {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .mprose__lead,
+  .mprose__body,
+  .mprose__end h2,
+  .mprose__end p {
+    text-box-trim: trim-both;
+    text-box-edge: cap alphabetic;
+  }
+
+  .mprose__lead {
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: -0.68px;
+    line-height: 1.5;
+  }
+
+  .mprose__body,
+  .mprose__end p {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.28px;
+    line-height: 1.3;
+  }
+
+  .mprose__photo {
+    display: block;
+    width: 360px;
+    height: 211.87px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .mprose__end h2 {
+    margin-bottom: 20px;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: -0.68px;
+    line-height: 24px;
+  }
+
+  .mprose__end p {
+    margin-bottom: 20px;
+  }
+
+  .mprose__end p:last-child {
+    margin-bottom: 0;
+  }
+
+  .mprose__end a {
+    color: var(--red);
+  }
+
+  .mshare {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .mshare p {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.28px;
+    line-height: normal;
+    text-box-trim: trim-both;
+    text-box-edge: cap alphabetic;
+  }
+
+  .mshare a {
+    display: flex;
+    width: 52px;
+    height: 52px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--black);
+    border-radius: 50%;
+  }
+
+  .mblock {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .mspacer {
+    display: block;
+    height: 5px;
+  }
+
+  .mblog .section-title {
+    font-size: 29px;
+    letter-spacing: -0.58px;
+    text-box-trim: trim-both;
+    text-box-edge: cap alphabetic;
+  }
+
+  .mhotels {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .mhotels::-webkit-scrollbar {
+    display: none;
+  }
+
+  .mblog .hotel-card {
+    width: 244.5px;
+    flex: none;
+  }
+
+  .mblog .hotel-card__body {
+    padding-right: 14px;
+    padding-left: 14px;
+  }
+
+  .mblog .hotel-card__place,
+  .mblog .hotel-card__type,
+  .mblog .hotel-card__meta p {
+    font-size: 14px;
+    letter-spacing: -0.28px;
+  }
+
+  .mblog .hotel-card__type {
+    flex-wrap: nowrap;
+    gap: 4px;
+  }
+
+  .mblog .hotel-card__meta {
+    grid-template-columns: max-content max-content;
+    justify-content: space-between;
+    column-gap: 6px;
+  }
+
+  .mblog .hotel-card__meta p {
+    white-space: nowrap;
+  }
+
+  .mblog .hotel-card__meta .icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .mblog .hotel-card__name {
+    font-size: 20px;
+  }
+
+  .mblog .hotel-card__price strong {
+    font-size: 20px;
+    letter-spacing: -0.8px;
+  }
+
+  .mblog .hotel-card .suns .icon {
+    width: 13px;
+    height: 13px;
+  }
+
+  .mblog .hotel-card__next {
+    box-shadow: 0 15px 30px rgba(52, 7, 78, 0.12);
+  }
+
+  .mcta {
+    display: flex;
+    align-items: flex-end;
+    gap: 30px;
+  }
+
+  .mcta__line {
+    flex: 1;
+    height: 1px;
+    background: var(--light-gray);
+  }
+
+  .mstories {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    filter: drop-shadow(0 2px 5px rgba(38, 38, 38, 0.05));
+  }
+
+  .mfeature {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .mfeature__pic {
+    display: block;
+    height: 270px;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+
+  .mfeature__pic img,
+  .mcompact__pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .mfeature .article__meta {
+    font-size: 14px;
+    letter-spacing: -0.28px;
+  }
+
+  .mfeature h3 {
+    color: var(--black);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  .mfeature h3 a,
+  .mcompact h3 a {
+    color: inherit;
+  }
+
+  .mcompact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .mcompact__pic {
+    display: block;
+    width: 150px;
+    height: 130px;
+    flex: none;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+
+  .mcompact--short .mcompact__pic {
+    height: 112.5px;
+  }
+
+  .mcompact__txt {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+  }
+
+  .mcompact .article__meta {
+    font-family: var(--font-futura);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.32px;
+    line-height: normal;
+  }
+
+  .mcompact h3 {
+    color: var(--black);
+    font-family: var(--font-futura);
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.4px;
+    line-height: normal;
+  }
+
+  .mblog__end {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mnews {
+    position: relative;
+    display: flex;
+    min-height: 766px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 100px 15px;
+    border-radius: 10px;
+    color: var(--white);
+  }
+
+  .mnews__bg,
+  .mnews__bg img,
+  .mnews__shade {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .mnews__bg img {
+    object-fit: cover;
+    object-position: center bottom;
+  }
+
+  .mnews__shade {
+    background: rgba(62, 59, 69, 0.5);
+    mix-blend-mode: multiply;
+  }
+
+  .mnews__content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 30px;
+  }
+
+  .mnews h2 {
+    font-size: 29px;
+    font-weight: 600;
+    letter-spacing: -0.58px;
+    line-height: 1.15;
+    text-align: center;
+    text-shadow: 0 20px 20px rgba(123, 123, 123, 0.2);
+  }
+
+  .mnews__lead {
+    margin: 0;
+    font-family: var(--font-futura);
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: -0.38px;
+    line-height: normal;
+    text-align: center;
+    text-shadow: 0 20px 40px rgba(123, 123, 123, 0.2);
+  }
+
+  .mnews__card {
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    border-radius: 12px;
+    background: var(--white);
+  }
+
+  .mnews__card input,
+  .mnews__pref {
+    width: 100%;
+    height: 50px;
+    padding: 16px 27px;
+    border: 0;
+    background: transparent;
+    color: var(--black);
+    font-family: var(--font-sofia);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.28px;
+    text-align: left;
+  }
+
+  .mnews__card input::placeholder {
+    color: var(--black);
+    opacity: 1;
+  }
+
+  .mnews__rule {
+    height: 0;
+    margin: 0;
+    border: 0;
+    border-top: 1px solid var(--light-gray);
+  }
+
+  .mnews__pref {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--black);
+  }
+
+  .mnews__card .btn--fill {
+    width: 100%;
+  }
+
+  .mnews__consent {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.28px;
+    line-height: 1.3;
+  }
+
+  .mnews__consent input {
+    flex: none;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    border: 1px solid var(--black-20);
+    border-radius: 5px;
+    background: var(--white);
+    appearance: none;
+  }
+
+  .mfoot {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 60px;
+  }
+
+  .mfoot__cols {
+    display: grid;
+    grid-template-columns: 170px 170px;
+    gap: 20px;
+  }
+
+  .mfoot .foot-links {
+    gap: 20px;
+    font-size: 14px;
+    letter-spacing: -0.28px;
+  }
+
+  .mfoot__groups {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .mfoot .foot-group h3 {
+    font-size: 14px;
+    letter-spacing: -0.28px;
+  }
+
+  .mfoot .socials {
+    justify-content: center;
+    gap: 60px;
+  }
+
+  .mfoot .social {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+    letter-spacing: -0.32px;
+    text-align: center;
+  }
+
+  .mfoot__copy {
+    margin: 0;
+    color: var(--black);
+    font-size: 13px;
+    line-height: 1.15;
+    text-align: center;
+  }
+
+  .mfoot__copy a {
+    text-decoration: underline;
+  }
+
+  .mfoot__rule {
+    margin: 0;
+    border: 0;
+    border-top: 1px solid var(--light-gray);
+  }
+
+  .mfoot__legal {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .mfoot__legal p {
+    margin: 0;
+    color: var(--gray);
+    font-size: 13px;
+    letter-spacing: -0.26px;
+    line-height: 1.15;
+  }
+
+  .mfoot__legal p + p {
+    margin-top: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .mblog {
+    display: none !important;
+  }
+}

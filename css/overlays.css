@@ -1,0 +1,1555 @@
+/* Home destination panel. Sizes are the Figma frame 1611:8849, in px. */
+
+.dest {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  z-index: 5;
+  width: 100%;
+}
+
+.dest[hidden] {
+  display: none;
+}
+
+.dest__panel {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 25px 20px 20px;
+  border-radius: 10px;
+  background: var(--white);
+  box-shadow: var(--shadow-purple);
+}
+
+.dest__field {
+  position: relative;
+}
+
+.dest__label {
+  position: absolute;
+  top: -9px;
+  left: 15px;
+  z-index: 1;
+  display: flex;
+  height: 18px;
+  align-items: center;
+  padding: 0 12px;
+  background: var(--white);
+  color: var(--gray);
+  font-size: var(--text-11);
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.dest__input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 59px;
+  padding: 16px 27px;
+  border: 1px solid var(--black-20);
+  border-radius: 10px;
+}
+
+.dest__chips {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.dest__tag {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 10px;
+  border-radius: 5px;
+  background: var(--purple);
+  color: var(--white);
+  font-size: var(--text-13);
+  font-weight: 400;
+  letter-spacing: -0.26px;
+  line-height: 13px;
+}
+
+.dest__hint {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  color: var(--gray);
+  font-size: var(--text-16);
+  font-weight: 600;
+  letter-spacing: -0.32px;
+  line-height: normal;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dest__cols {
+  display: grid;
+  grid-template-columns: 388px 388px 388px;
+  column-gap: 30px;
+  align-items: start;
+}
+
+.dest__col,
+.dest__subs {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.dest__subs {
+  padding-left: 30px;
+}
+
+.dest-opt {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 24px;
+  color: var(--black);
+  font-size: var(--text-16);
+  font-weight: 600;
+  letter-spacing: -0.32px;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.dest-opt--sub {
+  height: 20px;
+}
+
+.dest-opt input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.dest-opt__box {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--black-20);
+  border-radius: 5px;
+  background: var(--white);
+}
+
+.dest-opt__box::after {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  background: var(--red);
+  content: "";
+  opacity: 0;
+}
+
+.dest-opt input:checked + .dest-opt__box::after {
+  opacity: 1;
+}
+
+.dest-opt input:focus-visible + .dest-opt__box {
+  outline: 2px solid var(--purple);
+  outline-offset: 2px;
+}
+
+.dest-opt__name {
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
+  white-space: nowrap;
+}
+
+.dest__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dest__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  height: 50px;
+  padding: 14px 25px;
+  border-radius: 10px;
+  font-size: var(--text-16);
+  font-weight: 700;
+  line-height: normal;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.dest__btn--ghost {
+  border: 1px solid var(--black);
+  background: var(--white);
+  color: var(--black);
+}
+
+.dest__btn--fill {
+  background: var(--red);
+  color: var(--white);
+}
+
+.dest__btn--search {
+  border: 1px solid var(--red);
+  background: var(--white);
+  color: var(--red);
+}
+
+.dest__close {
+  position: absolute;
+  top: 0;
+  left: calc(100% + 10px);
+  display: flex;
+  width: 42px;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 10px;
+  background: var(--black);
+}
+
+.dest__tag img,
+.dest__clear,
+.dest-opt__flag,
+.dest-opt__more,
+.dest__btn img,
+.dest__close img {
+  display: block;
+  flex: none;
+}
+
+/* Home date panel. Sizes are the Figma frame 1611:11206, in px. */
+
+.date {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  z-index: 5;
+  width: 100%;
+}
+
+.date[hidden] {
+  display: none;
+}
+
+.date__panel {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 25px 20px 20px;
+  border-radius: 10px;
+  background: var(--white);
+  box-shadow: var(--shadow-purple);
+}
+
+.date__main,
+.date__actions {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 1px 261px;
+  column-gap: 60px;
+}
+
+.date__main {
+  align-items: stretch;
+}
+
+.date__cal {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  min-width: 0;
+}
+
+.date__month {
+  display: flex;
+  align-items: center;
+}
+
+.date__month p {
+  flex: 1;
+  min-width: 0;
+  color: var(--purple);
+  font-size: var(--text-19);
+  font-weight: 600;
+  letter-spacing: -0.76px;
+  line-height: normal;
+  text-align: center;
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
+}
+
+.date__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.date__dow,
+.date__week {
+  display: flex;
+}
+
+.date__dow span {
+  flex: 1;
+  min-width: 0;
+  color: var(--black);
+  font-size: var(--text-16);
+  font-weight: 600;
+  letter-spacing: -0.32px;
+  line-height: normal;
+  text-align: center;
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
+}
+
+.date__pad {
+  flex: 1;
+  height: 40px;
+  min-width: 0;
+}
+
+.date-day {
+  position: relative;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  min-width: 0;
+  padding: 0;
+  color: var(--black);
+  font-size: var(--text-16);
+  font-weight: 400;
+  letter-spacing: -0.32px;
+  line-height: 1.3;
+  cursor: pointer;
+}
+
+.date-day span {
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
+}
+
+.date-day[data-tone="muted"][data-state="default"] {
+  color: var(--black-20);
+}
+
+.date-day[data-state="between"] {
+  background: #ece6e6;
+}
+
+.date-day[data-state="today"] span,
+.date-day[data-state="from"] span,
+.date-day[data-state="to"] span {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  color: var(--white);
+}
+
+.date-day[data-state="today"] span {
+  border: 2px solid var(--light-gray);
+  background: var(--red);
+}
+
+.date-day[data-state="from"],
+.date-day[data-state="to"] {
+  overflow: hidden;
+}
+
+.date-day[data-state="from"] span,
+.date-day[data-state="to"] span {
+  position: relative;
+  z-index: 1;
+  background: var(--purple);
+}
+
+.date-day[data-state="from"]::before,
+.date-day[data-state="to"]::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: #ece6e6;
+  content: "";
+}
+
+.date-day[data-state="from"]::before {
+  right: 0;
+  left: 50%;
+}
+
+.date-day[data-state="to"]::before {
+  right: 50%;
+  left: 0;
+}
+
+.date-day:focus-visible {
+  outline: 2px solid var(--purple);
+  outline-offset: 2px;
+}
+
+.date__rule {
+  width: 1px;
+  background: var(--light-gray);
+}
+
+.date__side {
+  align-self: start;
+  display: flex;
+  width: 261px;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.date__stay {
+  color: var(--purple);
+  font-size: var(--text-19);
+  font-weight: 600;
+  letter-spacing: -0.76px;
+  line-height: normal;
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
+}
+
+.date__nights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.date__night {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  height: 42px;
+  padding: 10px 20px;
+  border: 1px solid var(--black);
+  border-radius: 10px;
+  color: var(--black);
+  font-size: var(--text-16);
+  font-weight: 700;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.date__night--on {
+  border-color: var(--red);
+  color: var(--red);
+}
+
+.date__night img {
+  display: block;
+  flex: none;
+}
+
+.date__actions {
+  align-items: center;
+}
+
+.date__actions > .dest__btn {
+  justify-self: start;
+}
+
+.date__actions > .dest__btn--search {
+  grid-column: 4;
+  justify-self: end;
+}
+
+/* Home people panel. Sizes are the Figma frame 1611:13564, in px. */
+
+.people {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  z-index: 5;
+  width: 100%;
+}
+
+.people[hidden] {
+  display: none;
+}
+
+.people__panel {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 25px 20px 20px;
+  border-radius: 10px;
+  background: var(--white);
+  box-shadow: var(--shadow-purple);
+}
+
+.people__main {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 1px minmax(0, 1fr) 1px minmax(0, 1fr);
+  column-gap: 60px;
+  align-items: stretch;
+}
+
+.people__room,
+.people__quick {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  min-width: 0;
+}
+
+.people__title {
+  color: var(--purple);
+  font-size: var(--text-19);
+  font-weight: 600;
+  letter-spacing: -0.76px;
+  line-height: normal;
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
+}
+
+.people__rows {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.people__row,
+.people__count {
+  display: flex;
+  align-items: center;
+}
+
+.people__row {
+  gap: 10px;
+}
+
+.people__name {
+  flex: 1;
+  min-width: 0;
+  color: var(--black);
+  font-size: var(--text-16);
+  font-weight: 400;
+  letter-spacing: -0.32px;
+  line-height: 1.3;
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
+}
+
+.people__count {
+  flex: none;
+  gap: 20px;
+}
+
+.people__step {
+  display: flex;
+  width: 42px;
+  height: 42px;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid var(--black);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.people__step:focus-visible {
+  outline: 2px solid var(--purple);
+  outline-offset: 2px;
+}
+
+.people__step img,
+.people__chip img {
+  display: block;
+  flex: none;
+}
+
+.people__num {
+  width: 20px;
+  flex: none;
+  color: var(--black);
+  font-size: var(--text-16);
+  font-weight: 400;
+  letter-spacing: -0.32px;
+  line-height: 1.3;
+  text-align: center;
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
+}
+
+.people__rule {
+  width: 1px;
+  background: var(--light-gray);
+}
+
+.people__add {
+  align-self: start;
+}
+
+.people__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 261px;
+}
+
+.people__chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  height: 42px;
+  padding: 10px 20px;
+  border: 1px solid var(--black);
+  border-radius: 10px;
+  color: var(--black);
+  font-size: var(--text-16);
+  font-weight: 700;
+  line-height: normal;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.people__chip--on {
+  border-color: var(--red);
+  color: var(--red);
+}
+
+.people__chip:focus-visible {
+  outline: 2px solid var(--purple);
+  outline-offset: 2px;
+}
+
+.people__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Home main-search panel. Sizes are the Figma frame 1704:22788, in px. */
+
+.page:has(.msearch) {
+  position: relative;
+}
+
+.msearch {
+  position: absolute;
+  top: 148px;
+  left: var(--col-x);
+  z-index: 6;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  width: var(--col);
+}
+
+.msearch[hidden] {
+  display: none;
+}
+
+.msearch__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 20px;
+  border-radius: 10px;
+  background: var(--white);
+  box-shadow: var(--shadow-purple);
+}
+
+.msearch__lead {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.msearch__glass,
+.msearch__close {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.msearch__glass {
+  opacity: 0.4;
+}
+
+.msearch__glass img,
+.msearch__close img,
+.msearch__suns img,
+.msearch__path img {
+  display: block;
+  flex: none;
+}
+
+.msearch__query,
+.msearch__spot,
+.msearch__count,
+.msearch__title {
+  color: var(--black);
+  font-size: var(--text-16);
+  font-weight: 400;
+  letter-spacing: -0.32px;
+  line-height: 1.3;
+}
+
+.msearch__close:focus-visible {
+  outline: 2px solid var(--purple);
+  outline-offset: 2px;
+}
+
+.msearch__results {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 10px;
+  background: var(--white);
+  box-shadow: 0 20px 40px rgba(123, 123, 123, 0.2);
+}
+
+.msearch__tabs {
+  display: flex;
+  align-items: stretch;
+  padding: 0 20px;
+  border-bottom: 1px solid rgba(38, 38, 38, 0.6);
+}
+
+.msearch__tab {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  padding: 22px 20px 20px;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  color: var(--black);
+  font-size: var(--text-19);
+  font-weight: 400;
+  letter-spacing: -0.38px;
+  line-height: normal;
+}
+
+.msearch__tab--on {
+  border-bottom-color: var(--red);
+  color: var(--red);
+  font-weight: 600;
+}
+
+.msearch__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  height: 70px;
+  padding: 15px 20px;
+  border-bottom: 1px solid rgba(38, 38, 38, 0.6);
+}
+
+.msearch__row--hotel {
+  height: 84px;
+}
+
+.msearch__place {
+  display: flex;
+  align-items: flex-start;
+  height: 40px;
+  min-width: 0;
+}
+
+.msearch__place img {
+  display: block;
+  flex: none;
+}
+
+.msearch__where {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0 0;
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
+}
+
+.msearch__land,
+.msearch__path {
+  color: var(--black);
+  font-family: var(--font-futura);
+  font-size: var(--text-16);
+  font-weight: 600;
+  letter-spacing: -0.32px;
+}
+
+.msearch__land {
+  line-height: 1.3;
+}
+
+.msearch__count {
+  flex: none;
+  margin: 0;
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
+}
+
+.msearch__photo {
+  display: block;
+  width: 80px;
+  height: 54px;
+  flex: none;
+  object-fit: cover;
+}
+
+.msearch__info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.msearch__title {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.msearch__suns {
+  display: flex;
+  align-items: center;
+  flex: none;
+}
+
+.msearch__suns img {
+  margin-right: -6px;
+}
+
+.msearch__suns img:last-child {
+  margin-right: 0;
+}
+
+.msearch__path {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  line-height: normal;
+}
+
+/* Filter sort menu. Sizes are the Figma frame 2159:17591, in px. */
+
+.sort-menu {
+  position: relative;
+  flex: none;
+}
+
+.sort-menu__panel {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  width: 277px;
+  height: 113px;
+  padding: 20px;
+  border-radius: 10px;
+  background: var(--white);
+  box-shadow: var(--shadow-purple);
+}
+
+.sort-menu__panel[hidden] {
+  display: none;
+}
+
+.sort-menu__row {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  color: var(--black);
+  font-family: var(--font-sofia);
+  font-size: var(--text-16);
+  font-weight: 400;
+  letter-spacing: -0.32px;
+  line-height: 1.3;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.sort-menu__row span {
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
+}
+
+.sort-menu__row:focus-visible {
+  outline: 2px solid var(--purple);
+  outline-offset: 2px;
+}
+
+/* Hotel date panel. Sizes are the Figma frame 2188:14585, in px.
+   Day states reuse the home date-day rules. */
+
+.hdate {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+}
+
+.hdate .field {
+  width: 100%;
+}
+
+.hdate__panel {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  z-index: 6;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 1224px;
+  padding: 25px 20px 20px;
+  border-radius: 10px;
+  background: var(--white);
+  box-shadow: var(--shadow-purple);
+}
+
+.hdate__panel[hidden] {
+  display: none;
+}
+
+.hdate__months {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.hdate__months > .date__cal {
+  flex: 1;
+}
+
+.hdate__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Hotel people panel. Sizes are the Figma frame 2188:14603, in px.
+   Rows, chips, and steppers reuse the home people rules without changing them.
+   The panel is the width of the search row and lines up with its left edge. */
+
+.hpeople {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+}
+
+.hpeople .field {
+  width: 100%;
+}
+
+.hpeople__panel {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: calc(-200% - 40px);
+  z-index: 6;
+  width: 1224px;
+}
+
+.hpeople__panel[hidden] {
+  display: none;
+}
+
+/* Hotel nights menu. Sizes are the Figma frame 2168:17935, in px. */
+
+.nights {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+}
+
+.nights .field {
+  width: 100%;
+}
+
+.nights__panel {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  width: 277px;
+  height: 220px;
+  padding: 20px;
+  border-radius: 10px;
+  background: var(--white);
+  box-shadow: var(--shadow-purple);
+}
+
+.nights__panel[hidden] {
+  display: none;
+}
+
+.nights__row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  color: var(--black);
+  font-family: var(--font-sofia);
+  font-size: var(--text-16);
+  font-weight: 400;
+  letter-spacing: -0.32px;
+  line-height: 1.3;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.nights__box {
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--black-20);
+  border-radius: 5px;
+  background: var(--white);
+}
+
+.nights__box::after {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  background: var(--red);
+  content: "";
+  opacity: 0;
+}
+
+.nights__row[aria-selected="true"] .nights__box::after {
+  opacity: 1;
+}
+
+.nights__name {
+  flex: 1;
+  min-width: 0;
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
+}
+
+.nights__count {
+  flex: none;
+  color: var(--light-gray);
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
+}
+
+.nights__row:focus-visible {
+  outline: 2px solid var(--purple);
+  outline-offset: 2px;
+}
+
+/* Hotel transport menu. Sizes are the Figma frame 2168:17941, in px. */
+
+.transport {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+}
+
+.transport .field {
+  width: 100%;
+}
+
+.transport__panel {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  width: 277px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  background: var(--white);
+  box-shadow: var(--shadow-purple);
+}
+
+.transport__panel[hidden] {
+  display: none;
+}
+
+.transport__row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  color: var(--black);
+  font-family: var(--font-sofia);
+  font-size: var(--text-16);
+  font-weight: 400;
+  letter-spacing: -0.32px;
+  line-height: 1.3;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.transport__box {
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--black-20);
+  border-radius: 5px;
+  background: var(--white);
+}
+
+.transport__box::after {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  background: var(--red);
+  content: "";
+  opacity: 0;
+}
+
+.transport__row[aria-selected="true"] .transport__box::after {
+  opacity: 1;
+}
+
+.transport__name {
+  flex: 1;
+  min-width: 0;
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
+}
+
+.transport__count {
+  flex: none;
+  color: var(--light-gray);
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
+}
+
+.transport__row:focus-visible {
+  outline: 2px solid var(--purple);
+  outline-offset: 2px;
+}
+
+/* Hotel board menu. Sizes are the Figma frame 2194:15032, in px.
+   The search row in Figma is four fields. This control wraps onto
+   the next line so those fields keep their width. */
+
+.term-search__row {
+  flex-wrap: wrap;
+}
+
+.board {
+  position: relative;
+  flex: 0 0 100%;
+  width: auto;
+  min-width: 0;
+}
+
+.board .field {
+  width: 208px;
+  flex: none;
+}
+
+.board__panel {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  width: 277px;
+  height: 100px;
+  padding: 20px;
+  border-radius: 10px;
+  background: var(--white);
+  box-shadow: var(--shadow-purple);
+}
+
+.board__panel[hidden] {
+  display: none;
+}
+
+.board__row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  color: var(--black);
+  font-family: var(--font-sofia);
+  font-size: var(--text-16);
+  font-weight: 400;
+  letter-spacing: -0.32px;
+  line-height: 1.3;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.board__box {
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--black-20);
+  border-radius: 5px;
+  background: var(--white);
+}
+
+.board__box::after {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  background: var(--red);
+  content: "";
+  opacity: 0;
+}
+
+.board__row[aria-selected="true"] .board__box::after {
+  opacity: 1;
+}
+
+.board__name {
+  flex: 1;
+  min-width: 0;
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
+}
+
+.board__row:focus-visible {
+  outline: 2px solid var(--purple);
+  outline-offset: 2px;
+}
+
+/* Hotel gallery popup. Sizes are the Figma frame 2373:22045, in px. */
+
+.gallery-pop {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-pop[hidden] {
+  display: none;
+}
+
+.gallery-pop__backdrop {
+  position: absolute;
+  inset: 0;
+  border: 0;
+  background: rgba(38, 38, 38, 0.55);
+  cursor: pointer;
+}
+
+.gallery-pop__panel {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  width: 1264px;
+  height: 1332px;
+  max-height: 100%;
+  background: var(--black);
+  color: var(--white);
+}
+
+.gallery-pop__head {
+  display: flex;
+  flex: none;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 146px;
+  padding-top: 30px;
+}
+
+.gallery-pop__id {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+
+.gallery-pop__place {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  height: 24px;
+  margin: 0;
+  color: var(--white);
+  font-family: var(--font-sofia);
+  font-size: var(--text-16);
+  font-weight: 600;
+  letter-spacing: -0.32px;
+  line-height: normal;
+}
+
+.gallery-pop__place span,
+.gallery-pop__name > span:first-child,
+.gallery-pop__title {
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
+}
+
+.gallery-pop__place img {
+  display: block;
+  flex: none;
+}
+
+.gallery-pop__name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  color: var(--white);
+  font-family: var(--font-sofia);
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: -0.8px;
+  line-height: normal;
+}
+
+.gallery-pop__name .suns {
+  color: var(--white);
+}
+
+.gallery-pop__name .suns .icon {
+  width: 22px;
+  height: 22px;
+}
+
+.gallery-pop__kind {
+  margin: 0;
+  color: var(--white);
+  font-family: var(--font-sofia);
+  font-size: var(--text-16);
+  font-weight: 400;
+  letter-spacing: -0.32px;
+  line-height: 24px;
+}
+
+.gallery-pop__close {
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  padding: 10px;
+  border: 1px solid var(--white);
+  border-radius: 10px;
+  background: var(--black);
+}
+
+.gallery-pop__close img {
+  display: block;
+}
+
+.gallery-pop__close:focus-visible {
+  outline: 2px solid var(--white);
+  outline-offset: 2px;
+}
+
+.gallery-pop__body {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.gallery-pop__stack {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.gallery-pop__title {
+  margin: 0;
+  color: var(--white);
+  font-family: var(--font-sofia);
+  font-size: var(--text-23);
+  font-weight: 600;
+  letter-spacing: -0.46px;
+  line-height: normal;
+}
+
+.gallery-pop__video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 729 / 413;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.gallery-pop__spacer {
+  flex: none;
+  width: 50px;
+  height: 5px;
+}
+
+.gallery-pop__photos {
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-pop__cols {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.gallery-pop__col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 622px;
+}
+
+.gallery-pop__col img {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.gallery-pop__photo--wide {
+  aspect-ratio: 1920 / 1080;
+}
+
+.gallery-pop__photo--tall {
+  aspect-ratio: 1620 / 1080;
+}
+
+.gallery-pop__photo--dining {
+  aspect-ratio: 1588 / 1080;
+}
+
+.gallery-pop__photo--kids {
+  aspect-ratio: 1619 / 1080;
+}
+
+.gallery-pop__end {
+  flex: none;
+  width: 50px;
+  height: 30px;
+}
+
+[data-gallery-open] {
+  cursor: pointer;
+}
+
+[data-gallery-open] .gallery__play {
+  cursor: pointer;
+}
+
+.gallery-pop__video-hit {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+.gallery-pop__video-hit:focus-visible {
+  outline: 2px solid var(--white);
+  outline-offset: 2px;
+}
+
+/* Hotel video popup. Sizes are the Figma frame 1772:12436, in px. */
+
+.video-pop {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-pop[hidden] {
+  display: none;
+}
+
+.video-pop__backdrop {
+  position: absolute;
+  inset: 0;
+  border: 0;
+  background: rgba(38, 38, 38, 0.55);
+  cursor: pointer;
+}
+
+.video-pop__panel {
+  position: relative;
+  z-index: 1;
+  width: 1000px;
+  height: 562px;
+}
+
+.video-pop__poster {
+  display: block;
+  width: 1000px;
+  height: 562px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.video-pop__close {
+  position: absolute;
+  top: 0;
+  left: 1010px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  padding: 10px;
+  border-radius: 10px;
+  background: var(--black);
+}
+
+.video-pop__close img {
+  display: block;
+}
+
+.video-pop__close:focus-visible {
+  outline: 2px solid var(--white);
+  outline-offset: 2px;
+}
